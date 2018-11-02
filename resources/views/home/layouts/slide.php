@@ -2,7 +2,7 @@
   <div class="main-slider" id="home">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 col-sm-3 col-xs-12 banner-left hidden-xs"><img src="images/banner-left.jpg" alt="banner"></div>
+        <div class="col-md-3 col-sm-3 col-xs-12 banner-left hidden-xs"><img src="<?php echo asset('public/home/images/banner-left.jpg') ;?>" alt="VIT"></div>
         <div class="col-sm-9 col-md-9 col-lg-9 col-xs-12 jtv-slideshow">
           <div id="jtv-slideshow">
             <div id='rev_slider_4_wrapper' class='rev_slider_wrapper fullwidthbanner-container' >

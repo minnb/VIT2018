@@ -1,7 +1,6 @@
-<?php
- require __DIR__.'/../layouts/header.php';
- require __DIR__.'/../layouts/nav_no.php';
-?>
+<?php  require __DIR__.'/../layouts/header.php'; ?>
+<body class="">
+ <?php require __DIR__.'/../layouts/nav.php'; ?>
 <div class="breadcrumbs">
   <div class="container">
     <div class="row">

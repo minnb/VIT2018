@@ -1,5 +1,5 @@
 <?php 
-                $lstCate = App\Models\Category::getList(1); 
+$lstCate = App\Models\Category::getList(1); 
 ?>
 <nav>
   <div class="container">
