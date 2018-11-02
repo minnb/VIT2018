@@ -1,88 +1,17 @@
-/*  ################################################################
-
-  File Name: style.css
-  Template Name: ShopMart
-  Created By: justthemevalley 
- 
- [Table of contents]
-   
-  1. Common styles
-  2. Newsletter Popup
-  3. Layout 
-     3.1. col1 layout
-     3.2. col2 layout
-     3.3. col3 layout
-  4. Header
-		4.1 welcome info
-		4.2 header top
-		4.3 language & currency
-		4.4 Top Search
-		4.5 Logo
-		4.6 Top Cart
-	5. Service area
-	6. Our clients
-	7. Special products
-	8. Home all banner
-	9. Bottom banner section
-	10. Hot deal
-	10. Home tabs
-	11. Sale & New label
-	12. product hover
-	13. owl.carousel Slider
-	14. testimonials
-	15. Latest news
-	16. Totop
-	17. footer
-	18. Main menu
-	19. Toolbar
-	20. Filter price
-	21. breadcrumbs
-	22. sidebar
-		22.1 category sidebar
-		22.2 sidebar cart
-		22.3 product price range
-		22.4 filter color
-		22.5 shop by
-		22.6 compare
-		22.7 popular tags
-		22.8 Add banner
-		22.9 Special product
-		
-	23. category description
-	24. products grid
-	25. products list
-	26. price box
-	27. products view
-	28. products tabs
-	29. shopping cart
-	30. My Wishlist
-	31. Dashboard
-	32. Compare table
-	33. Checkout page
-	34. Contact page
-	35. Login page
-	36. 404 Error Page
-	37. About us
-	38. FAQ Page
-	39. on sale product
-
-
-################################################################# */ 
-
 /*Google Fonts*/
 @import 'https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i';
 @import 'https://fonts.googleapis.com/css?family=Zilla+Slab:300,300i,400,400i,500,500i,600,600i,700,700i';
 @import 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700';
 @import 'https://fonts.googleapis.com/css?family=Satisfy';
+@import 'https://fonts.googleapis.com/css?family=Roboto';
 /******************************************
 1. Common styles
 ******************************************/
-
 body {
 	background: #fff;
 	color: #333333;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 12px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
 	font-weight: 400;
 	line-height: 1.5;
 	text-align: left;
@@ -1595,7 +1524,7 @@ ul#cart-sidebar {
 }
 .text-des h2 {
 	color: #333;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -1603,7 +1532,7 @@ ul#cart-sidebar {
 }
 .text-des p {
 	color: #555;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
 	margin: 0;
@@ -1956,7 +1885,7 @@ a.shop-now {
 	margin: 25px 0 0px;
 	padding: 0 0 0px;
 	position: relative;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 .des-hot-deal {
 	display: block;
@@ -1967,13 +1896,13 @@ a.shop-now {
 }
 .hot-offer-text {
 	font-size: 36px;
-	font-family: Satisfy, cursive;
+	font-family: Roboto, cursive;
 	color: #e83f33;
 	text-align: center;
 }
 .hot-offer-text span {
 	font-weight: 700;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: #333;
 }
 .daily-deal p {
@@ -2131,7 +2060,7 @@ a.link:hover {
 	font-size: 18px;
 	font-weight: 600;
 	margin-bottom: 0px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	display: inline-block;
 }
 .title-divider {
@@ -2140,7 +2069,7 @@ a.link:hover {
 	width: 100%;
 }
 .sub-title {
-	font-family: 'Zilla Slab', serif;
+	font-family: 'Roboto', serif;
 	font-size: 15px;
 	font-style: italic;
 	margin-top: 2px;
@@ -2189,7 +2118,7 @@ a.link:hover {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 0px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     display: inline-block;
 }
 .page-header .text-main {
@@ -2637,7 +2566,7 @@ a.link:hover {
 	font-weight: 600;
 	text-transform: capitalize;
 	margin-bottom: 2px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 .testimonials {
 	padding: 0px;
@@ -2680,7 +2609,7 @@ a.link:hover {
 	text-transform: none;
 	margin-bottom: 0px;
 	font-style: normal;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 .testimonials blockquote:before {
 	content: "\f10d";
@@ -2851,7 +2780,7 @@ a.link:hover {
 }
 .blog-top-desc h4 {
   color: #333;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   margin-bottom: 12px; font-size:15px;
 }
@@ -2910,7 +2839,7 @@ a.link:hover {
 	font-size: 26px;
 	font-weight: 600;
 	margin-bottom: 0px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 #latest-news .page-header {
 	border-bottom: 0px #ddd solid;
@@ -3195,7 +3124,7 @@ footer .footer-links ul li a:hover {
 	color: #333;
 	text-transform: capitalize;
 	vertical-align: 15px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 .footer-newsletter form {
 	display: inline-block;
@@ -3466,7 +3395,7 @@ nav a:hover {
 .mtmegamenu {
 	position: relative;
 	margin: auto 0px auto 0px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	height: 50px;
 }
 .jtv-megamenu {
@@ -3783,7 +3712,7 @@ float:left
 	display: none
 }
 .mobile-menu li li a span {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	text-transform: none;
 	letter-spacing: normal;
 	font-weight: 400;
@@ -8142,4 +8071,8 @@ a.jtv-m-logo-img {
 .product-imgage-263{
 	height: 265px;
 	width: 265px;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
