@@ -28,9 +28,8 @@
 <script src="<?php echo asset('public/assets/plugins/waypoints/lib/jquery.waypoints.min.js') ; ?>"></script>
 <script src="<?php echo asset('public/assets/plugins/counterup/jquery.counterup.min.js') ; ?>"></script>	
 
-<script src="<?php echo asset('public/js/angular/lib/angularjs.js') ; ?>"></script>			
-<script src="<?php echo asset('public/js/angular/appVIT.js') ; ?>"></script>	
-<script src="<?php echo asset('public/js/angular/SettingController.js') ; ?>"></script>	
+<script src="<?php echo asset('public/js/angular/lib/angular.min.js') ; ?>"></script>			
+<script src="<?php echo asset('public/js/angular/app.js') ; ?>"></script>	
 	<script>
 		$(document).ready(function() {
 			// data-tables

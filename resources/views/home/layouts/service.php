@@ -30,7 +30,7 @@
               <div class="icon-wrapper"><i class="fa fa-umbrella"></i></div>
               <div class="service-wrapper">
                 <h3>Liên hệ hotline</h3>
-                <p>Gọi ngay: 0985.912.033</p>
+                <p>Gọi ngay: <?php echo App\Models\Setting::getHotline(); ?></p>
               </div>
             </div>
           </div>

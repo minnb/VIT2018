@@ -36,7 +36,7 @@
               </div>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-3 top-cart">
-              <div class="link-wishlist hidden-xs"> <a href="#"> <i class="icon-phone"></i> </i><b>0985.912.033 </b></a> </div>
+              <div class="link-wishlist hidden-xs"> <a href="#"> <i class="icon-phone"></i> </i><b><?php echo App\Models\Setting::getHotline(); ?> </b></a> </div>
             </div>
           </div>
         </div>
