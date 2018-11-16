@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.8.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 02, 2018 lúc 03:06 PM
--- Phiên bản máy phục vụ: 10.1.36-MariaDB
--- Phiên bản PHP: 7.2.11
+-- Thời gian đã tạo: Th10 16, 2018 lúc 05:17 AM
+-- Phiên bản máy phục vụ: 10.1.32-MariaDB
+-- Phiên bản PHP: 7.2.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -249,6 +249,26 @@ INSERT INTO `post_tags` (`id`, `post_id`, `tag_id`, `created_at`, `updated_at`) 
 -- --------------------------------------------------------
 
 --
+-- Cấu trúc bảng cho bảng `setting`
+--
+
+CREATE TABLE `setting` (
+  `id` int(11) NOT NULL,
+  `type` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(191) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `address` varchar(191) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `phone` varchar(191) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `email` varchar(191) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `alias` varchar(191) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `sort` tinyint(4) NOT NULL,
+  `status` tinyint(4) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Cấu trúc bảng cho bảng `tags`
 --
 
@@ -347,7 +367,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Binh Minh', 'minhnb.it@gmail.com', NULL, '$2y$10$G47Ai.DIBpfTV1a5uYAOguThDCcPRT/t/lXZ8ENE.RmcgLZVjs/0i', 'cIM3CLSY9yyZEWSFSCxOwxfcjBgRYTXD0zyvZEeDjK9FDGzycP8TSlDmnI0K', '2018-10-30 07:03:41', '2018-10-30 07:03:41'),
+(1, 'Binh Minh', 'minhnb.it@gmail.com', NULL, '$2y$10$G47Ai.DIBpfTV1a5uYAOguThDCcPRT/t/lXZ8ENE.RmcgLZVjs/0i', 'PksK3rACSXGjoZY5EobF26GhLcvNPPHKFdkuFD16SpuLFJswwOYsDBsasL96', '2018-10-30 07:03:41', '2018-10-30 07:03:41'),
 (2, 'Hoàng Ngọc Chiến', 'chienhn@vitduct.com.vn', NULL, '$2y$10$3XhPenZ06FwmIvCjbkcSn.Fpae1S8Xa9KR.0WR.BoE33Y7wSu9RAe', 'mHI4yRYM8ATSDHMIkpSHFqzHHWmKxrmjz462SljQhJ7En3GZNWqIM99EFnTg', '2018-10-30 07:26:17', '2018-10-30 07:26:17'),
 (3, 'Vitduct.com.vn', 'contact@vitduct.com.vn', NULL, '$2y$10$k3TDFY8lGpAboAHeKAFY1eUJFMARfVeaNC5ahp8GYitPvNwShuxKC', 'Qyrgx46LrPlKVF96742m3Rijsd8SFvUWa0HI5WLutBPQRiNHfpioAw6PweV1', '2018-10-30 07:26:40', '2018-10-30 07:26:40');
 
@@ -363,37 +383,9 @@ ALTER TABLE `categories`
   ADD KEY `categories_userid_foreign` (`userID`);
 
 --
--- Chỉ mục cho bảng `migrations`
+-- Chỉ mục cho bảng `setting`
 --
-ALTER TABLE `migrations`
-  ADD PRIMARY KEY (`id`);
-
---
--- Chỉ mục cho bảng `posts`
---
-ALTER TABLE `posts`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `posts_userid_foreign` (`userID`),
-  ADD KEY `posts_categorieid_foreign` (`categorieID`);
-
---
--- Chỉ mục cho bảng `post_tags`
---
-ALTER TABLE `post_tags`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `post_tags_post_id_foreign` (`post_id`),
-  ADD KEY `post_tags_tag_id_foreign` (`tag_id`);
-
---
--- Chỉ mục cho bảng `tags`
---
-ALTER TABLE `tags`
-  ADD PRIMARY KEY (`id`);
-
---
--- Chỉ mục cho bảng `users`
---
-ALTER TABLE `users`
+ALTER TABLE `setting`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -401,51 +393,10 @@ ALTER TABLE `users`
 --
 
 --
--- AUTO_INCREMENT cho bảng `categories`
+-- AUTO_INCREMENT cho bảng `setting`
 --
-ALTER TABLE `categories`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
-
---
--- AUTO_INCREMENT cho bảng `migrations`
---
-ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT cho bảng `posts`
---
-ALTER TABLE `posts`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=120;
-
---
--- AUTO_INCREMENT cho bảng `post_tags`
---
-ALTER TABLE `post_tags`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=116;
-
---
--- AUTO_INCREMENT cho bảng `tags`
---
-ALTER TABLE `tags`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
-
---
--- AUTO_INCREMENT cho bảng `users`
---
-ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- Các ràng buộc cho các bảng đã đổ
---
-
---
--- Các ràng buộc cho bảng `posts`
---
-ALTER TABLE `posts`
-  ADD CONSTRAINT `posts_categorieid_foreign` FOREIGN KEY (`categorieID`) REFERENCES `categories` (`id`) ON DELETE CASCADE,
-  ADD CONSTRAINT `posts_userid_foreign` FOREIGN KEY (`userID`) REFERENCES `users` (`id`) ON DELETE CASCADE;
+ALTER TABLE `setting`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

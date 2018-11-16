@@ -19,17 +19,24 @@
             <li class="submenu">
                 <a href="<?php echo route('get.admin.list.new') ; ?>"><i class="fa fa-fw fa-newspaper-o"></i><span> Tin tức </span> </a>
             </li>
+             <li class="submenu">
+                <a href="#"><i class="fa fa-cog bigfonts"></i><span> Cài đặt </span>  <span class="menu-arrow"></span></a>
+                    <ul class="list-unstyled">
+                        <li><a href="<?php echo route('get.admin.setting.hotline') ; ?>">Hotline</a></li>
+                        <li><a href="<?php echo route('get.admin.setting.company') ; ?>">Thông tin công ty</a></li>
+                    </ul>
+            </li>
 			<li class="submenu">
                 <a href="#"><i class="fa fa-fw fa-table"></i> <span> Danh mục </span> <span class="menu-arrow"></span></a>
 					<ul class="list-unstyled">
-						<li><a href="<?php echo route('get.admin.cate.product.list') ; ?>">Sản phẩm</a></li>
+                        <li><a href="<?php echo route('get.admin.cate.product.list') ; ?>">Sản phẩm</a></li>
                         <li><a href="<?php echo route('get.admin.cate.project.list') ; ?>">Dự án</a></li>
                         <li><a href="<?php echo route('get.admin.cate.document.list') ; ?>">Tài liệu</a></li>
-						<li><a href="<?php echo route('get.admin.cate.new.list') ; ?>">Tin tức</a></li>
+                        <li><a href="<?php echo route('get.admin.cate.new.list') ; ?>">Tin tức</a></li>
 					</ul>
             </li>		
              <li class="submenu">
-                <a href="charts.html"><i class="fa fa-fw fa-user"></i><span> Users </span> </a>
+                <a href="#"><i class="fa fa-fw fa-user"></i><span> Users </span> </a>
             </li>
         </ul>
         <div class="clearfix"></div>

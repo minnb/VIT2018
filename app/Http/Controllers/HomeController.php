@@ -11,6 +11,11 @@ class HomeController extends Controller
     {
         return view('home.layouts.index');
     }
+    
+    public function getLogin(){
+        return view('auth.login');
+    }
+
     public function getProducts(){
         $data = Post::where([
             ['parent', 1],

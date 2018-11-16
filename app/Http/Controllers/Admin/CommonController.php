@@ -4,9 +4,9 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-
-class AdminController extends Controller
+use App\Models\Category;
+use App\Models\Setting;
+class CommonController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -23,10 +23,13 @@ class AdminController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        return view('admin.layouts.index');
+    public function getHotline(){
+        $data = Setting::where('type','hotline')->orderBy('sort')->get()->toArray();
+        return view('admin.setting.hotline', compact('data'));
     }
 
-    
+    public function getCompany(){
+        
+    }
+
 }
