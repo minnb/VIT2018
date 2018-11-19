@@ -19,4 +19,9 @@ class Setting extends Model
 			return '0985.912.033';
 		}
 	}
+
+	public static function getComName($alias='COM'){
+		$data = Setting::where('alias',$alias)->get()->toArray();
+		return $data;
+	}
 }

@@ -72,9 +72,33 @@ class CommonController extends Controller
         $hotline->delete();
         return "OK";
     }
-
+//******************************************************************************
     public function getCompany(){
-
+        return view('admin.setting.company');
     }
+    public function getListCompany(){
+        return Setting::where('type','COMPANY')->orderBy('id','DESC')->get();
+    }
+    public function getEditCompany($id){
+        return Setting::findOrFail($id);
+    }
+    public function postEditCompany(Request $request, $id){
+        $setting = Setting::findOrFail($id);
+        try{
+            DB::beginTransaction();
+            $setting->name =$request->name;
+            $setting->address =$request->address;
+            $setting->phone = $request->phone;
+            $setting->fax =$request->fax;
+            $setting->email = $request->email;
+            $setting->save();
+            DB::commit();
+            return "OK";  
+        }catch (Exception $e) {
+            DB::rollBack();
+            return "NOT"; 
+        }
+    }
+
 
 }

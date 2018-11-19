@@ -1,16 +1,17 @@
  <!-- Footer -->
+
   <footer>
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-md-3 col-xs-12">
           <div class="footer-logo"><a href="index.html"></a>
             <!--<img src="<?php echo asset('public/home/images/footer-logo.png') ?> " alt="vitduct.com.vn"></a>  -->
-            <b style="color:white">CÔNG TY CỔ PHẦN ĐẦU TƯ XÂY LẮP VÀ THƯƠNG MẠI VIỆT NAM</b>
+            <b style="color:white"><?php echo $com[0]['name'] ?></b>
           </div>
-          <div class="footer-description">Số 14-Nghách 30-Ngõ 192, Phố Yên Duyên, Yên Sở-Hoàng Mai, Hà Nội </div>
-          <div class="footer-description"><b>Điện thoại:</b> 024.36454199 </div>
-          <div class="footer-description"><b>Fax:</b> 024.36454199 </div>
-          <div class="footer-description"><b>Email:</b> contact@vitduct.com.vn </div>
+          <div class="footer-description"><?php echo $com[0]['address'] ?></div>
+          <div class="footer-description"><b>Điện thoại:</b> <?php echo $com[0]['phone'] ?> </div>
+          <div class="footer-description"><b>Fax:</b> <?php echo $com[0]['fax'] ?> </div>
+          <div class="footer-description"><b>Email:</b> <?php echo $com[0]['email'] ?> </div>
         </div>
         <div class="col-sm-6 col-md-4 col-xs-12 collapsed-block">
           <div class="footer-links">
@@ -45,9 +46,9 @@
           <div class="footer-links">
             <h3 class="links-title">NHÀ MÁY SẢN XUẤT<a class="expander visible-xs" href="#TabBlock-5">+</a></h3>
             <div class="tabBlock" id="TabBlock-5">
-              <div class="footer-description">Cụm CN Yên Bình, xã Yên Bình, Huyện Thạch Thất, TP Hà Nội</div>
-              <div class="footer-description"> <b>Điện thoại:</b>  (+84) 0983 625 429 <br>
-                <b>Email:</b> contact@vitduct.com.vn<br>
+              <div class="footer-description"><?php echo $man[0]['address'] ?></div>
+              <div class="footer-description"> <b>Điện thoại:</b>  <?php echo $man[0]['phone'] ?> <br>
+                <b>Email:</b> <?php echo $man[0]['email'] ?><br>
                 <b></b>  </div>
             </div>
             <div class="social">

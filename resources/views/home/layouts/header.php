@@ -10,4 +10,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" href="<?php echo asset('public/home/style.css') ?>">
 </head>
-
+ <?php 
+    $com = App\Models\Setting::getComName('COM');
+    $man = App\Models\Setting::getComName('MAN');
+ ?>

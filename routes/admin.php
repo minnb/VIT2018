@@ -33,6 +33,12 @@ Route::group(['prefix'=> 'dashboard'], function(){
 			Route::post('hotline/edit/{id}', ['as'=>'post.admin.setting.hotline.edit','uses'=>'Admin\CommonController@postEditHotline']);
 			Route::get('hotline/del/{id}', ['as'=>'get.admin.setting.hotline.del','uses'=>'Admin\CommonController@getDelete']);
 
+			Route::get('company', ['as'=>'get.admin.setting.company','uses'=>'Admin\CommonController@getCompany']);
+			Route::get('company/list', ['as'=>'get.admin.setting.company.list','uses'=>'Admin\CommonController@getListCompany']);
+			Route::get('company/edit/{id}', ['as'=>'get.admin.setting.company.edit','uses'=>'Admin\CommonController@getEditCompany']);
+			Route::post('company/edit/{id}', ['as'=>'post.admin.setting.company.edit','uses'=>'Admin\CommonController@postEditCompany']);
+			//Route::get('company/del/{id}', ['as'=>'get.admin.setting.company.del','uses'=>'Admin\CommonController@getDelete']);
+
 			Route::get('company', ['as'=>'get.admin.setting.company','uses'=>'Admin\CommonController@getCompany']);	
 		});
 	});
