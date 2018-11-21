@@ -17,7 +17,7 @@
                 <a href="<?php echo route('get.admin.list.project') ; ?>"><i class="fa fa-fw fa-building"></i><span> Dự án </span> </a>
             </li>
             <li class="submenu">
-                <a href="<?php echo route('get.admin.list.new') ; ?>"><i class="fa fa-fw fa-newspaper-o"></i><span> Tin tức </span> </a>
+                <a href="<?php echo route('get.admin.list.news') ; ?>"><i class="fa fa-fw fa-newspaper-o"></i><span> Tin tức </span> </a>
             </li>
              <li class="submenu">
                 <a href="#"><i class="fa fa-cog bigfonts"></i><span> Cài đặt </span>  <span class="menu-arrow"></span></a>

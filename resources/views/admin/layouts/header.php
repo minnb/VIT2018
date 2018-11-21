@@ -14,9 +14,17 @@
 	<link href="<?php echo asset('public/assets/font-awesome/css/font-awesome.min.css') ; ?>" rel="stylesheet" type="text/css" />
 	<!-- Custom CSS -->
 	<link href="<?php echo asset('public/assets/css/style.css') ; ?>" rel="stylesheet" type="text/css" />
-	<!-- BEGIN CSS for this page -->
+    <link href="<?php echo asset('public/assets/plugins/jquery.filer/css/jquery.filer.css') ; ?>" rel="stylesheet" type="text/css" />
+    <link href="<?php echo asset('public/assets/plugins/jquery.filer/css/themes/jquery.filer-dragdropbox-theme.css') ; ?>" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css"/>
-	<!-- END CSS for this page -->
+    <script type="text/javascript">
+        var baseURL = "<?php echo url('/'); ?>";
+        window.setTimeout(function() {
+            $("#flash-message").fadeTo(500, 0).slideUp(500, function(){
+            $(this).remove();
+            });
+        }, 5000);
+    </script>
 </head>
 <body class="adminbody">
 <div id="main">

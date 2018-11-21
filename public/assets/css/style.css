@@ -1208,3 +1208,15 @@ img.img-thumb{
   max-width: 50px;
 
 }
+.img-product-edit{
+  max-height: auto; vertical-align: center; max-width: 70%;
+}
+.dis-image-from-database{
+  max-height:100px; margin: auto; padding: 0 0 10px 0;
+}
+.dis-image-from-database-detail{
+  max-width:220px; margin-bottom:10px; padding: 0 0 10px 0;
+}
+.icon-del{
+  position: relative; top:-65px; right: 45px; border-radius: 50%;
+}

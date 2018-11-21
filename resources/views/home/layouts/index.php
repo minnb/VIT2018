@@ -42,7 +42,7 @@
                       <div class="product-thumbnail">
                         <div class="icon-new-label new-left">Mới</div>
                         <div class="pr-img-area product-image"> <a title="<?php echo $item['title']; ?>" href="<?php echo route('get.product.single',['id'=>fencrypt($item['id']),'name'=>makeUnicode($item['title'])]) ?>">
-                          <figure> <img class="first-img" src="<?php echo getImageInContent($item['content']) ?>" alt="HTML template"></figure>
+                          <figure> <img class="first-img" src="<?php echo App\Models\Images::checkImageProduct($item['id']); ?>" alt="<?php echo $item['title']; ?>"></figure>
                           </a> </div>
                       </div>
                       <div class="item-info">
@@ -92,12 +92,12 @@
                     <div class="item-inner">
                       <div class="product-thumbnail">
                         <div class="pr-img-area product-imgage-lager"> <a title="<?php echo $value['title']; ?>" href="<?php echo route('get.product.single',['id'=>fencrypt($value['id']),'name'=>makeUnicode($value['title'])]) ?>">
-                          <figure> <img class="first-img" src="<?php echo getImageInContent($value['content']) ?>" alt="HTML template"></figure>
+                          <figure> <img class="first-img" src="<?php echo App\Models\Images::checkImageProduct($value['id']); ?>" alt="<?php echo $value['title'];?>"></figure>
                           </a> </div>
                         </div>
                       <div class="item-info">
                         <div class="info-inner">
-                          <div class="item-title"> <a title="<?php echo $value['title']; ?>" href="single_product.html"><?php echo $value['title']; ?> </a> </div>
+                          <div class="item-title"> <a title="<?php echo $value['title']; ?>" href="#"><?php echo $value['title']; ?> </a> </div>
                         </div>
                       </div>
                     </div>

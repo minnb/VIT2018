@@ -31,7 +31,7 @@
                 <div class="item-inner">
                   <div class="product-thumbnail">
                     <div class="pr-img-area product-imgage-lager"> <a title="<?php echo $value['title']; ?>" href="<?php echo route('get.product.single',['id'=>fencrypt($value['id']),'name'=>makeUnicode($value['title'])]) ?>">
-                      <figure><img class="first-img" src="<?php echo getImageInContent($value['content']) ?>" alt="<?php echo $value['title']; ?>"></figure>
+                      <figure><img class="first-img" src="<?php echo App\Models\Images::checkImageProduct($value['id']); ?>" alt="<?php echo $value['title']; ?>"></figure>
                       </a> </div>
                   </div>
                   <div class="item-info">

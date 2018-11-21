@@ -8,7 +8,6 @@
 	</footer>
 
 </div>
-<!-- END main -->
 <script src="<?php echo asset('public/assets/js/modernizr.min.js') ; ?>"></script>
 <script src="<?php echo asset('public/assets/js/jquery.min.js') ; ?>"></script>
 <script src="<?php echo asset('public/assets/js/moment.min.js') ; ?>"></script>
@@ -18,29 +17,27 @@
 <script src="<?php echo asset('public/assets/js/fastclick.js') ; ?>"></script>
 <script src="<?php echo asset('public/assets/js/jquery.blockUI.js') ; ?>"></script>
 <script src="<?php echo asset('public/assets/js/jquery.nicescroll.js') ; ?>"></script>
-<!-- App js -->
 <script src="<?php echo asset('public/assets/js/pikeadmin.js') ; ?>"></script>
-<!-- BEGIN Java Script for this page -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
-<!-- Counter-Up-->
+<script src="<?php echo asset('public/assets/plugins/func_ckfinder.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/plugins/ckeditor/ckeditor.js'); ?>"></script>
+<script src="<?php echo asset('public/assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js'); ?>"></script>
 <script src="<?php echo asset('public/assets/plugins/waypoints/lib/jquery.waypoints.min.js') ; ?>"></script>
 <script src="<?php echo asset('public/assets/plugins/counterup/jquery.counterup.min.js') ; ?>"></script>	
-
+<script src="<?php echo asset('public/assets/plugins/jquery.filer/js/jquery.filer.min.js') ; ?>"></script>	
 <script src="<?php echo asset('public/js/angular/lib/angular.min.js') ; ?>"></script>			
 <script src="<?php echo asset('public/js/angular/app.js') ; ?>"></script>	
-	<script>
-		$(document).ready(function() {
-			// data-tables
-			$('#example1').DataTable();
-					
-			// counter-up
-			$('.counter').counterUp({
-				delay: 10,
-				time: 600
-			});
-		} );		
-	</script>
-<!-- END Java Script for this page -->
+<script src="<?php echo asset('public/assets/js/script.js') ; ?>"></script>	
+<script>
+	$(document).ready(function() {
+		$('#example1').DataTable();
+		$('.counter').counterUp({
+			delay: 10,
+			time: 600
+		});
+	} );		
+</script>
+
 

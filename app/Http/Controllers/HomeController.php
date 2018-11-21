@@ -35,7 +35,7 @@ class HomeController extends Controller
         $data = Post::where([
             ['categorieID', $id],
             ['sttesign', 1]
-        ])->orderBy('id', 'DESC')->paginate(8);
+        ])->orderBy('id', 'DESC')->paginate(18);
 
         if(isset($data)){
             return view('home.pages.product_by_cate', compact('data','id','cate_name'));

@@ -85,3 +85,50 @@ function fencrypt($string) {
     }
     return base64_encode($result);
 }
+
+function menuMulti ($data,$parent_id = 0,$str="---|",$select=0) {
+  foreach ($data as $val) {
+    $id = $val["id"];
+    $name = $val["name"];
+    if ($val["parent"] == $parent_id) {
+      if ($select != 0 && $id == $select) {
+        echo '<option value="'.$id.'" selected>'.$str." ".$name.'</option>';
+      } else {
+        echo '<option value="'.$id.'" >'.$str." ".$name.'</option>';
+      }
+      $space ="---";
+      menuMulti ($data,$id,$space." ---|",$select);
+    }
+  }
+}
+
+function checkFolderImage(){
+  $str = date("Ym");
+  $path = env('APP_DIR_IMAGE').'/'.$str;
+  if (!file_exists($path)) {
+    mkdir($path, 0777, true);
+  }
+  return $path;
+}
+
+function delete_image_by_path($image,$path){
+  $img = $path.'/'.$image;
+  if(File::exists($img)){
+      File::delete($img);
+  }
+}
+function delete_image_no_path($img){
+  if(File::exists($img)){
+      File::delete($img);
+  }
+}
+
+function randomString($length = 10){
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $charactersLength = strlen($characters);
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    return $randomString;
+}

@@ -38,4 +38,5 @@ class Category extends Model
         $id = Category::find($cate_id)->id;
         return Category::find($id)->name;
     }
+
 }

@@ -18,6 +18,7 @@
 					</div>
 				</div>
 			</div>
+			<?php require __DIR__.'/../layouts/flash_message.php'; ?>
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 					<div class="card mb-3">
@@ -32,7 +33,9 @@
 											<th>Category</th>
 											<th>Price</th>
 											<th>Image</th>
-											<th>Action</th>
+											<th>
+												<a class="btn btn-danger" href="<?php echo route('get.admin.add.product'); ?>"><i class="fa fa-fw fa-plus"></i> Thêm mới</a>
+											</th>
 										</tr>
 									</thead>										
 									<tbody>
@@ -44,11 +47,11 @@
 											<td><?php echo App\Models\Category::getNameById($item['categorieID']); ?></td>
 											<td><?php echo $item['price']; ?></td>
 											<td>
-												<img class="img-thumbnail img-thumb" src="<?php echo getImageInContent($item['content']); ?>" />
+												<img class="img-thumbnail img-thumb" src="<?php echo App\Models\Images::checkImageProduct($item['id']); ?>" />
 											</td>
 											<td>
-												<a href="#"><i class="fa fa-fw fa-edit"></i> Edit </a>
-												<a href="#" style="color:red"><i class="fa fa-fw fa-trash"></i> Delete</a>
+												<a href="<?php echo route('get.admin.edit.product',['id'=>$item['id']]); ?>"><i class="fa fa-fw fa-edit"></i> Edit </a>
+												<a href="<?php echo route('get.admin.delete.product',['id'=>$item['id']]); ?>" style="color:red" onclick="return alertDelete();"><i class="fa fa-fw fa-trash"></i> Delete</a>
 											</td>
 										</tr>
 										<?php } ?>

@@ -20,7 +20,7 @@
         <div class="col-main col-sm-9 col-xs-12">
           <div class="product-view-area">
             <div class="product-big-image col-xs-12 col-sm-5 col-lg-5 col-md-5">
-              <div class="large-image"> <a href="#" class="cloud-zoom" id="zoom1" rel="useWrapper: false, adjustY:0, adjustX:20"> <img class="zoom-img" src="<?php echo getImageInContent($data['content']) ?>" alt="<?php echo $data['title'] ?>"> </a> </div>
+              <div class="large-image"> <a href="#" class="cloud-zoom" id="zoom1" rel="useWrapper: false, adjustY:0, adjustX:20"> <img class="zoom-img" src="<?php echo App\Models\Images::checkImageProduct($data['id']); ?>" alt="<?php echo $data['title'] ?>"> </a> </div>
             </div>
             <div class="col-xs-12 col-sm-7 col-lg-7 col-md-7 product-details-area">
               <div class="product-name">
@@ -88,7 +88,7 @@
                   foreach($lstPro as $key=>$value) {
                 ?>
                 <li class="item">
-                  <div class="products-block-left"> <a href="<?php echo route('get.product.single',['id'=>fencrypt($value['id']),'name'=>makeUnicode($value['title'])]) ?>" title="<?php echo $value['title'] ?>" class="product-image"><img src="<?php echo getImageInContent($value['content']) ?>" alt="Sample Product "></a></div>
+                  <div class="products-block-left"> <a href="<?php echo route('get.product.single',['id'=>fencrypt($value['id']),'name'=>makeUnicode($value['title'])]) ?>" title="<?php echo $value['title'] ?>" class="product-image"><img src="<?php echo App\Models\Images::checkImageProduct($value['id']); ?>" alt="<?php echo $value['title'] ?>"></a></div>
                   <div class="products-block-right">
                     <p class="product-name"> <a href="<?php echo route('get.product.single',['id'=>fencrypt($value['id']),'name'=>makeUnicode($value['title'])]) ?>"><?php echo $value['title'] ?></a> </p>
                     <span class="price"></span>
@@ -142,7 +142,7 @@
                     <div class="item-inner">
                       <div class="product-thumbnail">
                         <div class="pr-img-area product-imgage-lager"> <a title="<?php echo $value['title']; ?>" href="<?php echo route('get.product.single',['id'=>fencrypt($value['id']),'name'=>makeUnicode($value['title'])]) ?>">
-                          <figure> <img class="first-img" src="<?php echo getImageInContent($value['content']) ?>" alt="HTML template"></figure>
+                          <figure> <img class="first-img" src="<?php echo App\Models\Images::checkImageProduct($value['id']); ?>" alt="HTML template"></figure>
                           </a> </div>
                         </div>
                       <div class="item-info">
