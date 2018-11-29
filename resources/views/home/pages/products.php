@@ -6,8 +6,8 @@
     <div class="row">
       <div class="col-xs-12">
         <ul>
-          <li class="home"> <a title="Go to Home Page" href="<?php echo route('index'); ?>">Trang chủ</a><span>&raquo;</span></li>
-          <li class=""> <a title="Go to Home Page" href="#">Sản phẩm</a></li>
+          <li class="home"> <a title="Quay về trang chủ" href="<?php echo route('index'); ?>">Trang chủ</a><span>&raquo;</span></li>
+          <li class=""> <a title="Sản phẩm sản xuất tại Vitduct" href="#">Sản phẩm</a></li>
         </ul>
       </div>
     </div>

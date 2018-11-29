@@ -133,5 +133,33 @@ class NewController extends Controller
         }
     }
 
+    public function getAbout(){
+        $data = Post::where('categorieID', 16)->get()->toArray();
+        return view('admin.pages.about',compact('data'));
+    }
 
+    public function postAbout(Request $request){
+        $post = new Post();
+        try{
+            DB::beginTransaction();
+            $post->title = 'About us';
+            $post->description = 'About us';
+            $post->content = $request->content;
+            $post->viewed = 0;
+            $post->votes = 0;
+            $post->parent = 16;
+            $post->type = 1;
+            $post->categorieID = 16;
+            $post->userID = Auth::user()->id;
+            $post->sttesign = 1;
+            $post->price = 0;
+            $post->save();
+            $post_id = $post->id;
+            DB::commit();
+            return redirect()->route('get.admin.list.about')->with(['flash_message'=>'Chỉnh sửa thành công']);
+        }catch (Exception $e) {
+            DB::rollBack();
+            return redirect()->route('get.admin.list.about')->with(['flash_message'=>'Có lỗi xảy ra']);
+        }
+    }
 }

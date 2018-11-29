@@ -4,15 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Dashboard - VITDUCT</title>
-	<meta name="description" content="Free Bootstrap 4 Admin Theme | Pike Admin">
-	<meta name="author" content="Pike Web Development - https://www.pikephp.com">
-	<!-- Favicon -->
+	<meta name="description" content="Vitduct">
+	<meta name="author" content="Vitduct">
 	<link rel="shortcut icon" href="<?php echo asset('public/assets/images/favicon.ico') ; ?>">
-	<!-- Bootstrap CSS -->
 	<link href="<?php echo asset('public/assets/css/bootstrap.min.css') ; ?>" rel="stylesheet" type="text/css" />
-	<!-- Font Awesome CSS -->
 	<link href="<?php echo asset('public/assets/font-awesome/css/font-awesome.min.css') ; ?>" rel="stylesheet" type="text/css" />
-	<!-- Custom CSS -->
 	<link href="<?php echo asset('public/assets/css/style.css') ; ?>" rel="stylesheet" type="text/css" />
     <link href="<?php echo asset('public/assets/plugins/jquery.filer/css/jquery.filer.css') ; ?>" rel="stylesheet" type="text/css" />
     <link href="<?php echo asset('public/assets/plugins/jquery.filer/css/themes/jquery.filer-dragdropbox-theme.css') ; ?>" rel="stylesheet" type="text/css" />

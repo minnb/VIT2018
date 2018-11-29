@@ -20,6 +20,9 @@
                 <a href="<?php echo route('get.admin.list.news') ; ?>"><i class="fa fa-fw fa-newspaper-o"></i><span> Tin tức </span> </a>
             </li>
              <li class="submenu">
+                <a href="<?php echo route('get.admin.list.about') ; ?>"><i class="fa fa-fw fa-star"></i><span> Giới thiệu </span> </a>
+            </li>
+             <li class="submenu">
                 <a href="#"><i class="fa fa-cog bigfonts"></i><span> Cài đặt </span>  <span class="menu-arrow"></span></a>
                     <ul class="list-unstyled">
                         <li><a href="<?php echo route('get.admin.setting.hotline') ; ?>">Hotline</a></li>

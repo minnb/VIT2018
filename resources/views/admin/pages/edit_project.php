@@ -26,11 +26,11 @@
 					<div class="col-lg-8 col-md-8 col-xs-12 col-sm-12">
 						<div class="form-group">
 							<label>Tên sản phẩm</label>
-							<input type="text" name="name" class="form-control" value="<?php echo old('name',isset($data) ? $data['title'] : ''); ?>" />
+							<input type="text" name="name" class="form-control" value="<?php echo old('name',isset($data) ? $data['title'] : ''); ?>" required="required"/>
 						</div>
 						<div class="form-group">
 							<label>Chi tiết sản phẩm</label>
-							<textarea id="content" name="content" class="form-control" rows="30"><?php echo old('content',isset($data) ? $data['content'] : ''); ?></textarea>
+							<textarea id="content" name="content" class="form-control" rows="30" required="required"><?php echo old('content',isset($data) ? $data['content'] : ''); ?></textarea>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-4 col-xs-12 col-sm-12">

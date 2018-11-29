@@ -26,7 +26,7 @@
 					<div class="col-lg-8 col-md-8 col-xs-12 col-sm-12">
 						<div class="form-group">
 							<label>Tên sản phẩm</label>
-							<input type="text" name="name" class="form-control"/>
+							<input type="text" name="name" class="form-control" required="required" />
 						</div>
 						<div class="form-group">
 							<label>Danh mục</label>
@@ -36,7 +36,7 @@
 						</div>
 						<div class="form-group">
 							<label>Link Google Driver</label>
-							<input type="text" name="description" class="form-control"/>
+							<input type="text" name="description" class="form-control" required="required"/>
 						</div>
 					</div>
 				</div>

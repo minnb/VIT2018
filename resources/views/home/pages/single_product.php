@@ -6,8 +6,8 @@
     <div class="row">
       <div class="col-xs-12">
         <ul>
-          <li class="home"> <a title="Go to Home Page" href="<?php echo route('index'); ?>">Trang chủ</a><span>&raquo;</span></li>
-          <li class=""> <a title="Go to Home Page" href="shop_grid.html"><?php echo App\Models\Category::find($data['categorieID'])->name; ?></a><span>&raquo;</span></li>
+          <li class="home"> <a title="<?php echo $data['title']; ?>" href="<?php echo route('index'); ?>">Trang chủ</a><span>&raquo;</span></li>
+          <li class=""> <a title="<?php echo $data['title']; ?>" href="#"><?php echo App\Models\Category::find($data['categorieID'])->name; ?></a><span>&raquo;</span></li>
           <li><strong><?php echo $data['title']; ?></strong></li>
         </ul>
       </div>

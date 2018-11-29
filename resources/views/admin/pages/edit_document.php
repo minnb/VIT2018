@@ -26,7 +26,7 @@
 					<div class="col-lg-8 col-md-8 col-xs-12 col-sm-12">
 						<div class="form-group">
 							<label>Tên sản phẩm</label>
-							<input type="text" name="name" class="form-control" value="<?php echo old('name',isset($data) ? $data['title'] : ''); ?>" />
+							<input type="text" name="name" class="form-control" value="<?php echo old('name',isset($data) ? $data['title'] : ''); ?>" required="required"/>
 						</div>
 						<div class="form-group">
 							<label>Danh mục</label>
@@ -36,7 +36,7 @@
 						</div>
 						<div class="form-group">
 							<label>Link Google Driver</label>
-							<input type="text" name="description" class="form-control" value="<?php echo old('description',isset($data) ? $data['description'] : ''); ?>"/>
+							<input type="text" name="description" class="form-control" value="<?php echo old('description',isset($data) ? $data['description'] : ''); ?>" required="required"/>
 						</div>
 					</div>
 				</div>

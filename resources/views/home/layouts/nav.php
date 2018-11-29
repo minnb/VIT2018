@@ -62,10 +62,10 @@
               ?>
               <li class="nosub"><a href="<?php echo route('get.product.cate', ['id'=>fencrypt($item['id']),'name'=>makeUnicode($item['name'])] ) ?>"><?php echo $item['name']; ?></a></li>
               <?php } ?>
-              <li class="nosub"><a href="#">Dự án tiêu biểu</a></li>
-              <li class="nosub"><a href="#">Tải báo giá và Catalog</a></li>
-              <li class="nosub"><a href="#">Hình ảnh nhà máy</a></li>
-              <li class="nosub"><a href="#">Tin tức nội bộ</a></li>
+              <li class="nosub"><a href="<?php echo route('get.project.all'); ?>">Dự án tiêu biểu</a></li>
+              <li class="nosub"><a href="<?php echo route('get.document.all'); ?>">Tải báo giá và Catalog</a></li>
+              <li class="nosub"><a href="<?php echo route('get.project.all'); ?>">Hình ảnh nhà máy</a></li>
+              <li class="nosub"><a href="<?php echo route('get.project.all'); ?>">Tin tức nội bộ</a></li>
             </ul>
           </div>
         </div>
@@ -95,7 +95,7 @@
               </ul>
             </li>
             <li class="mt-root">
-              <div class="mt-root-item"><a href="#">
+              <div class="mt-root-item"><a href="<?php echo route('get.document.all'); ?>">
                 <div class="title title_font"><span class="title-text">Báo giá & Catalog</span></div>
                 </a></div>
               <ul class="menu-items col-xs-12">
@@ -105,7 +105,7 @@
                       $lstDoc = App\Models\Category::getList(11); 
                       foreach($lstDoc as $key=>$item) { ?>
                     <li class="menu-item">
-                      <div class="title"> <a href="#"><?php echo $item['name'] ?></a></div>
+                      <div class="title"> <a href="<?php echo route('get.document.all'); ?>"><?php echo $item['name'] ?></a></div>
                     </li>
                     <?php } ?>
                   </ul>
@@ -113,17 +113,17 @@
               </ul>
             </li>
             <li class="mt-root">
-              <div class="mt-root-item"><a href="#">
+              <div class="mt-root-item"><a href="<?php echo route('get.project.all'); ?>">
                 <div class="title title_font"><span class="title-text">Dự án</span> </div>
                 </a></div>
             </li>
             <li class="mt-root">
-              <div class="mt-root-item"><a href="#">
+              <div class="mt-root-item"><a href="<?php echo route('get.about'); ?>">
                 <div class="title title_font"><span class="title-text">Giới thiệu</span></div>
                 </a></div>
             </li>
             <li class="mt-root">
-              <div class="mt-root-item"><a href="#">
+              <div class="mt-root-item"><a href="<?php echo route('get.about'); ?>">
                 <div class="title title_font"><span class="title-text">Liên hệ</span></div>
                 </a></div>
             </li>

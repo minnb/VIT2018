@@ -26,11 +26,11 @@
 					<div class="col-lg-8 col-md-8 col-xs-12 col-sm-12">
 						<div class="form-group">
 							<label>Tên sản phẩm</label>
-							<input type="text" name="name" class="form-control"/>
+							<input type="text" name="name" class="form-control" required="required"/>
 						</div>
 						<div class="form-group">
 							<label>Chi tiết sản phẩm</label>
-							<textarea id="content" name="content" class="form-control" rows="30"></textarea>
+							<textarea id="content" name="content" class="form-control" rows="30" required="required"></textarea>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-4 col-xs-12 col-sm-12">

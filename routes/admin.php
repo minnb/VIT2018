@@ -21,6 +21,8 @@ Route::group(['prefix'=> 'dashboard'], function(){
 			Route::get('projects', ['as'=>'get.admin.list.project','uses'=>'Admin\ProjectController@getList']);
 			Route::get('documents', ['as'=>'get.admin.list.document','uses'=>'Admin\DocumentController@getList']);
 			Route::get('news', ['as'=>'get.admin.list.news','uses'=>'Admin\NewController@getList']);
+			Route::get('about', ['as'=>'get.admin.list.about','uses'=>'Admin\NewController@getAbout']);
+			Route::post('about', ['as'=>'post.admin.list.about','uses'=>'Admin\NewController@postAbout']);
 		});
 	});
 

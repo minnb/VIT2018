@@ -3,7 +3,6 @@
  require __DIR__.'/../layouts/left.php';
 ?>
 <div class="content-page">
-	<!-- Start content -->
     <div class="content">
 		<div class="container-fluid">
 			<div class="row">

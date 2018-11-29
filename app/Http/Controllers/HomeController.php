@@ -55,4 +55,34 @@ class HomeController extends Controller
     	}
     	
     }
+
+    public function getProject(){
+        $data = Post::where([
+            ['parent', 2],
+            ['sttesign', 1]
+        ])->paginate(20);
+        if(isset($data)){
+            return view('home.pages.projects', compact('data'));
+        }else{
+            return view('home.layouts.index');
+        }
+    }
+
+    public function getDocument(){
+        $data = Post::where([
+            ['parent', 11],
+            ['sttesign', 1]
+        ])->get()->toArray();
+        if(isset($data)){
+            return view('home.pages.documents', compact('data'));
+        }else{
+            return view('home.layouts.index');
+        }
+    }
+
+    public function getAbout(){
+        $id = 121;
+        $data = Post::find($id)->content;
+        return view('home.pages.about', compact('data'));
+    }
 }

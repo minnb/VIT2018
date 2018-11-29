@@ -8,10 +8,10 @@
 			<div class="row">
 				<div class="col-xl-12">
 					<div class="breadcrumb-holder">
-						<h1 class="main-title float-left">Thêm mới Tin tức</h1>
+						<h1 class="main-title float-left">Thông tin giới thiệu công ty</h1>
 						<ol class="breadcrumb float-right">
 							<li class="breadcrumb-item">Dashboard</li>
-							<li class="breadcrumb-item active">Thêm mới Tin tức</li>
+							<li class="breadcrumb-item active">Thông tin giới thiệu công ty</li>
 						</ol>
 						<div class="clearfix"></div>
 					</div>
@@ -20,39 +20,21 @@
 		</div>
 		<?php require __DIR__.'/../layouts/flash_message.php'; ?>
 		<div class="container-fluid backgroud_white">
-			<form name="create-question" action="<?php echo route('post.admin.add.news'); ?>" method="POST" enctype="multipart/form-data">
+			<form name="create-question" action="<?php echo route('post.admin.list.about'); ?>" method="POST" enctype="multipart/form-data">
 				<input type="hidden" name="_token" value="<?php echo csrf_token() ?>">
 				<div class="row backgroud_white">
 					<div class="col-lg-8 col-md-8 col-xs-12 col-sm-12">
 						<div class="form-group">
-							<label>Tiêu đề</label>
-							<input type="text" name="name" class="form-control" required="required"/>
-						</div>
-						<div class="form-group">
-							<label>Tóm tắt</label>
-							<textarea id="description" name="description" class="form-control" rows="3" required="required"></textarea>
-						</div>
-						<div class="form-group">
 							<label>Nội dung</label>
-							<textarea id="content" name="content" class="form-control" rows="30" required="required"></textarea>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-xs-12 col-sm-12">
-						<div class="form-group">
-							<label>Danh mục</label>
-							<select class="form-control" name="cate_id">
-								<?php echo menuMulti(App\Models\Category::getList(3),3,"--",0); ?>
-							</select>
-						</div>
-						<div class="form-group">
-							<label>Upload hình ảnh</label>
-							<input type="file" name="fileImage[]" id="filer_example2" multiple="multiple">
+							<textarea id="content" name="content" class="form-control" rows="60" required="required">
+								<?php if(isset($data)) { echo $data[0]['content'] ;} ?>
+							</textarea>
 						</div>
 					</div>
 				</div>
 				<div class="row backgroud_white">
 					<div class="col-md-12 col-lg-12">
-						<button type="submit" class="btn btn-primary"><i class="fa fa-save" aria-hidden="true"></i>  Thêm mới</button>
+						<button type="submit" class="btn btn-primary"><i class="fa fa-save" aria-hidden="true"></i>  Lưu thông tin</button>
 					</div>
 				</div>
 			</form>

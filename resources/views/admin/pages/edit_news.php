@@ -26,15 +26,15 @@
 					<div class="col-lg-8 col-md-8 col-xs-12 col-sm-12">
 						<div class="form-group">
 							<label>Tiêu đề</label>
-							<input type="text" name="name" class="form-control" value="<?php echo old('name',isset($data) ? $data['title'] : ''); ?>" />
+							<input type="text" name="name" class="form-control" value="<?php echo old('name',isset($data) ? $data['title'] : ''); ?>"  required="required"/>
 						</div>
 						<div class="form-group">
 							<label>Tóm tắt</label>
-							<textarea id="description" name="description" class="form-control" rows="3"><?php echo old('description',isset($data) ? $data['description'] : ''); ?></textarea>
+							<textarea id="description" name="description" class="form-control" rows="3" required="required"><?php echo old('description',isset($data) ? $data['description'] : ''); ?></textarea>
 						</div>
 						<div class="form-group">
 							<label>Nội dung</label>
-							<textarea id="content" name="content" class="form-control" rows="30"><?php echo old('content',isset($data) ? $data['content'] : ''); ?></textarea>
+							<textarea id="content" name="content" class="form-control" rows="30" required="required"><?php echo old('content',isset($data) ? $data['content'] : ''); ?></textarea>
 						</div>
 					</div>
 					<div class="col-lg-4 col-md-4 col-xs-12 col-sm-12">
