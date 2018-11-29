@@ -27,7 +27,7 @@
 						<div class="form-group">
 							<label>Nội dung</label>
 							<textarea id="content" name="content" class="form-control" rows="60" required="required">
-								<?php if(isset($data)) { echo $data[0]['content'] ;} ?>
+								<?php if(isset($data)) { echo $data['content'] ;} ?>
 							</textarea>
 						</div>
 					</div>
