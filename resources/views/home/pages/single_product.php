@@ -117,7 +117,7 @@
                 </li>
                 <?php } ?>
               </ul>
-              <a class="link-all" href="shop_grid.html">Tất cả Báo giá & Catalog</a> </div>
+              <a class="link-all" href="<?php echo route('get.document.all'); ?>">Tất cả Báo giá & Catalog</a> </div>
           </div>
         </aside>
       </div>
