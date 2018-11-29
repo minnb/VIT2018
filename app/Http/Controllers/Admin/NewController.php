@@ -135,7 +135,12 @@ class NewController extends Controller
 
     public function getAbout(){
         $data = Post::where('categorieID', 16)->get()->toArray();
-        return view('admin.pages.about',compact('data'));
+        if(isset($data)){
+            return view('admin.pages.about',compact('data'));
+        }else{
+            return view('admin.pages.about');
+        }
+        
     }
 
     public function postAbout(Request $request){
