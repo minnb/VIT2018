@@ -134,8 +134,8 @@ class NewController extends Controller
     }
 
     public function getAbout(){
-        $data = Post::where('categorieID', 16)->limit(1)->get()->toArray();
-        if(isset($data)){
+        $data = Post::where('categorieID', 16)->limit(1)->get();
+        if(isset($data) && $data->count() >0){
             $content = $data[0]['content'];
             return view('admin.pages.about',compact('content'));
         }else{
