@@ -81,8 +81,8 @@ class HomeController extends Controller
     }
 
     public function getAbout(){
-        $id = 121;
-        $data = Post::find($id)->content;
+        $a = Post::where('categorieID',16)->get()->toArray();
+        $data = $a[0]['content'];
         return view('home.pages.about', compact('data'));
     }
 }
