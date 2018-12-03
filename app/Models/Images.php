@@ -10,7 +10,7 @@ class Images extends Model
   public static function checkImageProduct($post_id){
   	$image = '';
   	$check = DB::table('images')->where('post_id',$post_id)->first();
-  	if(isset($check)){
+  	if(isset($check) && $check->count()>0){
   		$image = url('/').'/'.$check->image;
   	}else{
   		$post = DB::table('posts')->where('id',$post_id)->get();

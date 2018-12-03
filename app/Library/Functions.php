@@ -40,15 +40,21 @@ function getImageInContent($content){
 	$first_img = '';
 	ob_start();
 	ob_end_clean();
-  if(strlen($content) > 0){
-    $output = preg_match_all('/.+src=[\'"]([^\'"]+)[\'"].*>/i', $content, $matches);
-    $first_img = $matches [1] [0];
-  }else{
-    $first_img = '';
-  }
-	
+	try{
+         if(strlen($content) > 0){
+            $output = preg_match_all('/.+src=[\'"]([^\'"]+)[\'"].*>/i', $content, $matches);
+            if(count($matches) > 0){
+              $first_img = $matches[1][0];
+            }
+          }else{
+            $first_img = '';
+          }	    
+	}catch (Exception $e) {
+	    $first_img = '';
+	}
+
 	if(empty($first_img)){
-    $first_img = "/images/default.jpg";
+    $first_img = "http://vitduct.com.vn/public/home/images/logoVIT.png";
 	}
 	
 	if (strlen(strstr($first_img, "youtube")) > 0) {
