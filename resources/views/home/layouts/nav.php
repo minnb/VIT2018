@@ -21,7 +21,7 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-3 col-xs-12 jtv-logo-block"> 
-              <div class="logo"><a title="CÔNG TY CỔ PHẦN ĐẦU TƯ XÂY LẮP VÀ THƯƠNG MẠI VIỆT NAM" href="<?php echo route('index'); ?>"><img class="img-responsive" alt="CÔNG TY CỔ PHẦN ĐẦU TƯ XÂY LẮP VÀ THƯƠNG MẠI VIỆT NAM" title="CÔNG TY CỔ PHẦN ĐẦU TƯ XÂY LẮP VÀ THƯƠNG MẠI VIỆT NAM" src="<?php echo asset('public/home/images/logoVIT.png') ?>"></a> </div>
+              <div class="logo"><a title="CÔNG TY CỔ PHẦN ĐẦU TƯ XÂY LẮP VÀ THƯƠNG MẠI VIỆT NAM" href="<?php echo route('index'); ?>"><img class="img-responsive" alt="CÔNG TY CỔ PHẦN ĐẦU TƯ XÂY LẮP VÀ THƯƠNG MẠI VIỆT NAM" title="CÔNG TY CỔ PHẦN ĐẦU TƯ XÂY LẮP VÀ THƯƠNG MẠI VIỆT NAM" src="<?php echo asset('public/home/images/logo.jpg') ?>"></a> </div>
             </div>
             <div class="col-xs-12 col-sm-5 col-md-6 jtv-top-search"> 
               <div class="top-search">
