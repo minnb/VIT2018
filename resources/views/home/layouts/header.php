@@ -7,7 +7,7 @@
     $com = App\Models\Setting::getComName('COM');
     $man = App\Models\Setting::getComName('MAN');
  ?>
-<title>VIT | <?php if(isset($title)){ echo $title; } else { echo $com[0]['name']; } ?></title>
+<title><?php if(isset($title)){ echo $title; } else { echo $com[0]['name']; } ?></title>
 <meta name="description" content="Thi công lắp đặt các hệ thống ME cho các tòa nhà và nhà máy công nghiệp">
 <meta name="keywords" content="Sản xuất: Ống thông gió, van gió, cửa gió. Lò xo chống rung giảm chấn các loại. Cung cấp, thi công Hệ thống điều hòa không khí và thông gió"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
