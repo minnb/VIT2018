@@ -3,8 +3,8 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-md-3 col-xs-12">
-          <div class="footer-logo"><a href="index.html"></a>
-            <!--<img src="<?php echo asset('public/home/images/footer-logo.png') ?> " alt="vitduct.com.vn"></a>  -->
+          <div class="footer-logo" style="text-align: left;">
+            <!--<img src="" alt="vitduct.com.vn"></a>-->
             <b style="color:white"><?php echo $com[0]['name'] ?></b>
           </div>
           <div class="footer-description"><?php echo $com[0]['address'] ?></div>
