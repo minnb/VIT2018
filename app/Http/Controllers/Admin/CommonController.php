@@ -2,8 +2,11 @@
 namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Input;
 use App\Models\Category;
 use App\Models\Setting;
+use App\Models\Slide;
+use File;
 use DB;
 class CommonController extends Controller
 {
@@ -100,5 +103,52 @@ class CommonController extends Controller
         }
     }
 
+    public function getListSlide(){
+        $data = Slide::orderBy('id')->get()->toArray();
+        return view('admin.setting.slide', compact('data'));
+    }
 
+    public function postSlide(Request $request){
+        try{
+            DB::beginTransaction();
+
+            if($request->file('fileImage')){
+                foreach(Input::file('fileImage') as $file ){
+                    $slide = new Slide;
+                    $destinationPath = checkFolderImage();
+                    if(isset($file)){
+                        $file_name = randomString().'.'.$file->getClientOriginalExtension();
+                        $slide->image = $destinationPath.'/'.$file_name;
+                        $slide->description = '';
+                        $slide->alias = '';
+                        $file->move($destinationPath, $file_name);
+                        $slide->save();
+                    }
+                }
+            }
+            DB::commit();
+            return redirect()->route('get.admin.setting.slide.list')->with(['flash_message'=>'Upload hình ảnh thành công']);
+        }catch (Exception $e) {
+            DB::rollBack();
+            return redirect()->route('get.admin.setting.slide.list')->with(['flash_message'=>'Có lỗi xảy ra']);
+        }
+    }
+
+    public function getSlideDel($id){
+        $slide = Slide::findOrFail($id);
+        try{
+            DB::beginTransaction();
+            if(isset($slide)){
+                if(isset($slide->image)){
+                    File::delete($slide->image);
+                    DB::table('slide')->where('id','=',$id)->delete();
+                }
+            }  
+            DB::commit();
+            return redirect()->route('get.admin.setting.slide.list')->with(['flash_message'=>'Xóa dữ liệu thành công']);
+        }catch (Exception $e) {
+            DB::rollBack();
+            return redirect()->route('get.admin.setting.slide.list')->with(['flash_message'=>'Có lỗi xảy ra']);
+        }
+    }
 }

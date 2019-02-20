@@ -19,6 +19,9 @@
             <li class="submenu">
                 <a href="<?php echo route('get.admin.list.news') ; ?>"><i class="fa fa-fw fa-newspaper-o"></i><span> Tin tức </span> </a>
             </li>
+            <li class="submenu">
+                <a href="<?php echo route('get.admin.setting.slide.list') ; ?>"><i class="fa fa-fw fa-newspaper-o"></i><span> Hình ảnh slide </span> </a>
+            </li>
              <li class="submenu">
                 <a href="<?php echo route('get.admin.list.about') ; ?>"><i class="fa fa-fw fa-star"></i><span> Giới thiệu </span> </a>
             </li>
