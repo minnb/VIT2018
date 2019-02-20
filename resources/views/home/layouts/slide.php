@@ -8,16 +8,13 @@
             <div id='rev_slider_4_wrapper' class='rev_slider_wrapper fullwidthbanner-container' >
               <div id='rev_slider_4' class='rev_slider fullwidthabanner'>
                 <ul>
-                  <li data-transition='fade' data-slotamount='7' data-masterspeed='1000' data-thumb=''><img src='<?php echo asset("public/home/images/factory/3.jpg"); ?>' data-bgposition='left top' data-bgfit='cover' data-bgrepeat='no-repeat' alt="banner"/>
+                  <?php 
+                    $data_slide = App\Models\Slide::orderBy('id','DESC')->skip(0)->take(5)->get();
+                    foreach($data_slide as $key=>$value) { 
+                  ?>
+                  <li data-transition='fade' data-slotamount='7' data-masterspeed='1000' data-thumb=''><img src='<?php echo asset($value->image); ?>' data-bgposition='left top' data-bgfit='cover' data-bgrepeat='no-repeat' alt="banner"/>
                   </li>
-                  <li data-transition='fade' data-slotamount='7' data-masterspeed='1000' data-thumb=''><img src='<?php echo asset("public/home/images/factory/4.jpg"); ?>' data-bgposition='left top' data-bgfit='cover' data-bgrepeat='no-repeat' alt="banner"/>
-                  </li>
-                  <li data-transition='fade' data-slotamount='7' data-masterspeed='1000' data-thumb=''><img src='<?php echo asset("public/home/images/factory/6.jpg"); ?>' data-bgposition='left top' data-bgfit='cover' data-bgrepeat='no-repeat' alt="banner"/>
-                  </li>
-                  <li data-transition='fade' data-slotamount='7' data-masterspeed='1000' data-thumb=''><img src='<?php echo asset("public/home/images/factory/7.jpg"); ?>' data-bgposition='left top' data-bgfit='cover' data-bgrepeat='no-repeat' alt="banner"/>
-                  </li>
-                  <li data-transition='fade' data-slotamount='7' data-masterspeed='1000' data-thumb=''><img src='<?php echo asset("public/home/images/factory/9.jpg"); ?>' data-bgposition='left top' data-bgfit='cover' data-bgrepeat='no-repeat' alt="banner"/>
-                  </li>
+                <?php } ?>
                 </ul>
                 <div class="tp-bannertimer"></div>
               </div>

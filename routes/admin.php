@@ -79,5 +79,9 @@ Route::group(['prefix'=> 'dashboard'], function(){
 			//Route::get('company/del/{id}', ['as'=>'get.admin.setting.company.del','uses'=>'Admin\CommonController@getDelete']);
 
 			Route::get('company', ['as'=>'get.admin.setting.company','uses'=>'Admin\CommonController@getCompany']);	
+
+			Route::get('slide/list', ['as'=>'get.admin.setting.slide.list','uses'=>'Admin\CommonController@getListSlide']);
+			Route::post('slide/post', ['as'=>'post.admin.setting.slide.list','uses'=>'Admin\CommonController@postSlide']);
+			Route::get('slide/delete/{id}', ['as'=>'get.admin.setting.slide.delete','uses'=>'Admin\CommonController@getSlideDel']);
 		});
 	});
