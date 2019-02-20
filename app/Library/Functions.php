@@ -110,7 +110,7 @@ function menuMulti ($data,$parent_id = 0,$str="---|",$select=0) {
 
 function checkFolderImage(){
   $str = date("Ym");
-  $path = env('APP_DIR_IMAGE').'/'.$str;
+  $path = env('APP_DIR_IMAGE'); //.'/'.$str;
   if (!file_exists($path)) {
     mkdir($path, 0777, true);
   }
