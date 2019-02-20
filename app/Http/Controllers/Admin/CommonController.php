@@ -115,7 +115,7 @@ class CommonController extends Controller
             if($request->file('fileImage')){
                 foreach(Input::file('fileImage') as $file ){
                     $slide = new Slide;
-                    $destinationPath = '/public/images';
+                    $destinationPath = '/project/vitduct/storage/app/public/uploads/images';
                     if(isset($file)){
                         $file_name = randomString().'.'.$file->getClientOriginalExtension();
                         $slide->image = $destinationPath.'/'.$file_name;
