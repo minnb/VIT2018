@@ -115,7 +115,7 @@ class CommonController extends Controller
             if($request->file('fileImage')){
                 foreach(Input::file('fileImage') as $file ){
                     $slide = new Slide;
-                    $destinationPath = checkFolderImage();
+                    $destinationPath = url('/').'/public/images';
                     if(isset($file)){
                         $file_name = randomString().'.'.$file->getClientOriginalExtension();
                         $slide->image = $destinationPath.'/'.$file_name;
