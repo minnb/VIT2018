@@ -13,3 +13,11 @@
 [01-Dec-2018 04:34:50 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home/medifood/public_html/vitduct.com.vn/app/Library/Functions.php on line 52
 [01-Dec-2018 04:34:58 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home/medifood/public_html/vitduct.com.vn/app/Library/Functions.php on line 52
 [01-Dec-2018 04:35:25 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home/medifood/public_html/vitduct.com.vn/app/Library/Functions.php on line 52
+[28-Feb-2019 14:51:37 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected '?' in /home/medifood/public_html/vitduct.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[28-Feb-2019 14:51:38 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected '?' in /home/medifood/public_html/vitduct.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[28-Feb-2019 14:51:43 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected '?' in /home/medifood/public_html/vitduct.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[28-Feb-2019 14:51:47 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected '?' in /home/medifood/public_html/vitduct.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[28-Feb-2019 14:52:09 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected '?' in /home/medifood/public_html/vitduct.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[28-Feb-2019 14:52:09 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected '?' in /home/medifood/public_html/vitduct.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[28-Feb-2019 15:00:04 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected '?' in /home/medifood/public_html/vitduct.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
+[28-Feb-2019 15:01:40 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected '?' in /home/medifood/public_html/vitduct.com.vn/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 500
