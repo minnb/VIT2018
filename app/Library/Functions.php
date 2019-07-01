@@ -117,6 +117,15 @@ function checkFolderImage(){
   return $path;
 }
 
+function getImage($link){
+  $path = url('/').'storage\app\public\uploads\images\no-image.png';
+  if($link <> ''){
+    return $link;
+  }else{
+    return $path;
+  }
+}
+
 function delete_image_by_path($image,$path){
   $img = $path.'/'.$image;
   if(File::exists($img)){
