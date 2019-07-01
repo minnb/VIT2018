@@ -47,7 +47,7 @@
 											<td><?php echo App\Models\Category::getNameById($item['categorieID']); ?></td>
 											<td><?php echo $item['price']; ?></td>
 											<td>
-												<img class="img-thumbnail img-thumb" src="<?php echo App\Models\Images::checkImageProduct($item['id']); ?>" />
+												<img class="img-thumbnail img-thumb" src="<?php echo getImage(App\Models\Images::checkImageProduct($item['id'])); ?>" />
 											</td>
 											<td>
 												<a href="<?php echo route('get.admin.edit.product',['id'=>$item['id']]); ?>"><i class="fa fa-fw fa-edit"></i> Edit </a>
