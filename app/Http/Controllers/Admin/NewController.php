@@ -148,6 +148,9 @@ class NewController extends Controller
         try{
             DB::beginTransaction();
             $post = Post::where('categorieID', 16)->first();
+            if(!isset($post){
+                $post = new Post();
+            }
             $post->title = 'Thông tin giới thiệu công ty';
             $post->description = 'About us';
             $post->content = $request->content;
@@ -184,6 +187,9 @@ class NewController extends Controller
         try{
             DB::beginTransaction();
             $post = Post::where('categorieID', 24)->first();
+            if(!isset($post){
+                $post = new Post();
+            }
             $post->title = 'Chính sách đổi trả bảo hành';
             $post->description = 'Chính sách đổi trả bảo hành';
             $post->content = $request->content;
@@ -196,7 +202,7 @@ class NewController extends Controller
             $post->sttesign = 1;
             $post->price = 0;
             $post->save();
-            $post_id = $post->id;
+            
             DB::commit();
             return redirect()->route('get.admin.list.baohanh')->with(['flash_message'=>'Chỉnh sửa thành công']);
         }catch (Exception $e) {
@@ -220,6 +226,9 @@ class NewController extends Controller
         try{
             DB::beginTransaction();
             $post = Post::where('categorieID', 25)->first();
+            if(!isset($post){
+                $post = new Post();
+            }
             $post->title = 'Chính sách bảo mật';
             $post->description = 'Chính sách bảo mật';
             $post->content = $request->content;
