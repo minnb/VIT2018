@@ -148,7 +148,7 @@ class NewController extends Controller
         try{
             DB::beginTransaction();
             $post = Post::where('categorieID', 16)->first();
-            if(!isset($post){
+            if(!isset($post)){
                 $post = new Post();
             }
             $post->title = 'Thông tin giới thiệu công ty';
@@ -187,7 +187,7 @@ class NewController extends Controller
         try{
             DB::beginTransaction();
             $post = Post::where('categorieID', 24)->first();
-            if(!isset($post){
+            if(!isset($post)){
                 $post = new Post();
             }
             $post->title = 'Chính sách đổi trả bảo hành';
@@ -226,7 +226,7 @@ class NewController extends Controller
         try{
             DB::beginTransaction();
             $post = Post::where('categorieID', 25)->first();
-            if(!isset($post){
+            if(!isset($post)){
                 $post = new Post();
             }
             $post->title = 'Chính sách bảo mật';
