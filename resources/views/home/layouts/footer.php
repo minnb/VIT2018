@@ -32,11 +32,13 @@
             <h3 class="links-title">Danh mục<a class="expander visible-xs" href="#TabBlock-4">+</a></h3>
             <div class="tabBlock" id="TabBlock-4">
               <ul class="list-links list-unstyled">
-                <li><a href="account_page.html">Sản phẩm</a></li>
-                <li><a href="wishlist.html">Dự án</a></li>
-                <li><a href="shopping_cart.html">Báo giá & Catalog</a></li>
-                <li><a href="#">Giới thiệu</a></li>
-                <li><a href="#">Liên hệ</a></li>
+                <li><a href="<?php echo route('index'); ?>">Sản phẩm</a></li>
+                <li><a href="<?php echo route('index'); ?>">Dự án</a></li>
+                <li><a href="<?php echo route('index'); ?>">Báo giá & Catalog</a></li>
+                <li><a href="<?php echo route('get.baohanh'); ?>">Chính sách bảo hành </a></li>
+                <li><a href="<?php echo route('get.baomat'); ?>">Chính sách bảo mật</a></li>
+                <li><a href="<?php echo route('index'); ?>">Giới thiệu</a></li>
+                <li><a href="<?php echo route('index'); ?>">Liên hệ</a></li>
               </ul>
             </div>
           </div>
@@ -50,16 +52,16 @@
                 <b>Email:</b> <?php echo $man[0]['email'] ?><br>
                 <b></b>  </div>
             </div>
-            <div class="social">
-                <ul class="inline-mode">
-                  <li class="social-network fb">
-                    <a title="Connect us on Facebook" target="_blank" href="https://www.facebook.com/vitductchuyenonggio/?ref=br_rs"><i class="fa fa-facebook"></i></a>
-                  </li>
-                  <li class="social-network googleplus">
-                    <a title="Connect us on Google+" target="_blank" href="https://plus.google.com"><i class="fa fa-google"></i></a>
+            <br>
+            <div class="">
+                <ul class="">
+                  <li class="">
+                    <a title="Đã đăng ký với Bộ Công Thương" target="_blank" href="#">
+                      <img src="<?php echo asset('public\assets\images\dangky-bo-cong-thuong.png') ?>" style="max-height: 50px;">
+                    </a>
                   </li>
                 </ul>
-              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -71,7 +73,7 @@
           <div class="col-sm-6 col-xs-12">
             <ul class="footer-company-links">
               <li> <a href="<?php echo route('index'); ?>">Trang chủ</a> </li>
-              <li> <a href="<?php echo route('index'); ?>">Giới thiệu</a> </li>
+              <li> <a href="<?php echo route('get.about'); ?>">Giới thiệu</a> </li>
               <li> <a href="<?php echo route('index'); ?>">Sản phẩm</a> </li>
               <li> <a href="<?php echo route('index'); ?>">Liên hệ</a> </li>
             </ul>

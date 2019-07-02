@@ -83,6 +83,29 @@ class HomeController extends Controller
     public function getAbout(){
         $a = Post::where('categorieID',16)->get()->toArray();
         $data = $a[0]['content'];
-        return view('home.pages.about', compact('data'));
+        $title = $a[0]['title'];
+        return view('home.pages.about', compact('data', 'title'));
+    }
+
+    public function getWarranty(){
+        $a = Post::where('categorieID',24)->get()->toArray();
+        if($a){
+            $data = $a[0]['content'];
+            $title = $a[0]['title'];
+            return view('home.pages.baohanh', compact('data', 'title'));
+        }else{
+            return back();
+        }
+        
+    }
+    public function getSecurity(){
+        $a = Post::where('categorieID',25)->get()->toArray();
+         if($a){
+           $data =  $a[0]['content'];
+           $title = $a[0]['title'];
+           return view('home.pages.baomat', compact('data', 'title'));
+        }else{
+            return back();
+        }
     }
 }

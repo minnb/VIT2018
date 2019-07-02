@@ -22,8 +22,14 @@
             <li class="submenu">
                 <a href="<?php echo route('get.admin.setting.slide.list') ; ?>"><i class="fa fa-fw fa-newspaper-o"></i><span> Hình ảnh slide </span> </a>
             </li>
-             <li class="submenu">
-                <a href="<?php echo route('get.admin.list.about') ; ?>"><i class="fa fa-fw fa-star"></i><span> Giới thiệu </span> </a>
+            <li class="submenu">
+                <a href="#"><i class="fa fa-cog bigfonts"></i><span> Landing Page </span>  <span class="menu-arrow"></span></a>
+                    <ul class="list-unstyled">
+                        <li><a href="<?php echo route('get.admin.list.about') ; ?>">Giới thiệu công ty</a></li>
+                        <li><a href="<?php echo route('get.admin.list.baohanh') ; ?>">Chính sách bảo hành</a></li>
+                        <li><a href="<?php echo route('get.admin.list.baomat') ; ?>">Chính sách bảo mật</a></li>
+
+                    </ul>
             </li>
              <li class="submenu">
                 <a href="#"><i class="fa fa-cog bigfonts"></i><span> Cài đặt </span>  <span class="menu-arrow"></span></a>

@@ -145,10 +145,10 @@ class NewController extends Controller
     }
 
     public function postAbout(Request $request){
-        $post = new Post();
         try{
             DB::beginTransaction();
-            $post->title = 'About us';
+            $post = Post::where('categorieID', 16)->first();
+            $post->title = 'Thông tin giới thiệu công ty';
             $post->description = 'About us';
             $post->content = $request->content;
             $post->viewed = 0;
@@ -160,12 +160,84 @@ class NewController extends Controller
             $post->sttesign = 1;
             $post->price = 0;
             $post->save();
-            $post_id = $post->id;
+            //$post_id = $post->id;
             DB::commit();
             return redirect()->route('get.admin.list.about')->with(['flash_message'=>'Chỉnh sửa thành công']);
         }catch (Exception $e) {
             DB::rollBack();
             return redirect()->route('get.admin.list.about')->with(['flash_message'=>'Có lỗi xảy ra']);
+        }
+    }
+
+    public function getBaohanh(){
+        $data = Post::where('categorieID', 24)->limit(1)->get();
+        if(isset($data) && $data->count() >0){
+            $content = $data[0]['content'];
+            return view('admin.pages.abaohanh',compact('content'));
+        }else{
+            return view('admin.pages.abaohanh');
+        }
+        
+    }
+
+    public function postBaohanh(Request $request){
+        try{
+            DB::beginTransaction();
+            $post = Post::where('categorieID', 24)->first();
+            $post->title = 'Chính sách đổi trả bảo hành';
+            $post->description = 'Chính sách đổi trả bảo hành';
+            $post->content = $request->content;
+            $post->viewed = 0;
+            $post->votes = 0;
+            $post->parent = 24;
+            $post->type = 1;
+            $post->categorieID = 24;
+            $post->userID = Auth::user()->id;
+            $post->sttesign = 1;
+            $post->price = 0;
+            $post->save();
+            $post_id = $post->id;
+            DB::commit();
+            return redirect()->route('get.admin.list.baohanh')->with(['flash_message'=>'Chỉnh sửa thành công']);
+        }catch (Exception $e) {
+            DB::rollBack();
+            return redirect()->route('get.admin.list.baohanh')->with(['flash_message'=>'Có lỗi xảy ra']);
+        }
+    }
+
+    public function getBaomat(){
+        $data = Post::where('categorieID', 25)->limit(1)->get();
+        if(isset($data) && $data->count() >0){
+            $content = $data[0]['content'];
+            return view('admin.pages.abaomat',compact('content'));
+        }else{
+            return view('admin.pages.abaomat');
+        }
+        
+    }
+
+    public function postBaomat(Request $request){
+        try{
+            DB::beginTransaction();
+            $post = Post::where('categorieID', 25)->first();
+            $post->title = 'Chính sách bảo mật';
+            $post->description = 'Chính sách bảo mật';
+            $post->content = $request->content;
+            $post->viewed = 0;
+            $post->votes = 0;
+            $post->parent = 25;
+            $post->type = 1;
+            $post->categorieID = 25;
+            $post->userID = Auth::user()->id;
+            $post->sttesign = 1;
+            $post->price = 0;
+            $post->save();
+            $post_id = $post->id;
+            DB::commit();
+            return redirect()->route('get.admin.list.baomat')->with(['flash_message'=>'Chỉnh sửa thành công']);
+        }catch (Exception $e) {
+            DB::rollBack();
+            return redirect()->route('get.admin.list.baomat')->with(['flash_message'=>'Có lỗi xảy ra']);
         }
     }
 }

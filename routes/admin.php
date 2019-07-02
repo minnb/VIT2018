@@ -23,6 +23,13 @@ Route::group(['prefix'=> 'dashboard'], function(){
 			Route::get('news', ['as'=>'get.admin.list.news','uses'=>'Admin\NewController@getList']);
 			Route::get('about', ['as'=>'get.admin.list.about','uses'=>'Admin\NewController@getAbout']);
 			Route::post('about', ['as'=>'post.admin.list.about','uses'=>'Admin\NewController@postAbout']);
+
+			Route::get('chinh-sach-bao-hanh', ['as'=>'get.admin.list.baohanh','uses'=>'Admin\NewController@getBaohanh']);
+			Route::post('chinh-sach-bao-hanh', ['as'=>'post.admin.list.baohanh','uses'=>'Admin\NewController@postBaohanh']);
+
+			Route::get('chinh-sach-bao-mat', ['as'=>'get.admin.list.baomat','uses'=>'Admin\NewController@getBaomat']);
+			Route::post('chinh-sach-bao-mat', ['as'=>'post.admin.list.baomat','uses'=>'Admin\NewController@postBaomat']);
+
 		});
 	});
 

@@ -20,3 +20,7 @@ Route::get('/gioi-thieu-vitduct',array('as'=>'get.about','uses'=>'HomeController
 Route::get('/{id}/{title}',array('as'=>'get.product.cate','uses'=>'HomeController@getProductByCate'));
 Route::get('/san-pham/{id}/{title}',['as'=>'get.product.single','uses'=>'HomeController@getProductSingle']);
 
+
+Route::get('/chinh-sach-bao-hanh-doi-tra',array('as'=>'get.baohanh','uses'=>'HomeController@getWarranty'));
+Route::get('/chinh-sach-bao-mat',array('as'=>'get.baomat','uses'=>'HomeController@getSecurity'));
+
