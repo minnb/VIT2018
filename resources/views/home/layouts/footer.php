@@ -56,8 +56,8 @@
             <div class="">
                 <ul class="">
                   <li class="">
-                    <a title="Đã đăng ký với Bộ Công Thương" target="_blank" href="#">
-                      <img src="<?php echo asset('public\assets\images\dangky-bo-cong-thuong.png') ?>" style="max-height: 50px;">
+                    <a title="Đã đăng ký với Bộ Công Thương" target="_blank" href="http://online.gov.vn/Home/WebDetails/53965">
+                      <img src="http://online.gov.vn/Content/EndUser/LogoCCDVSaleNoti/logoSaleNoti.png" style="max-height: 50px;">
                     </a>
                   </li>
                 </ul>
