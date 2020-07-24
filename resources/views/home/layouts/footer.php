@@ -37,8 +37,8 @@
                 <li><a href="<?php echo route('index'); ?>">Báo giá & Catalog</a></li>
                 <li><a href="<?php echo route('get.baohanh'); ?>">Chính sách bảo hành </a></li>
                 <li><a href="<?php echo route('get.baomat'); ?>">Chính sách bảo mật</a></li>
-                <li><a href="<?php echo route('index'); ?>">Giới thiệu</a></li>
-                <li><a href="<?php echo route('index'); ?>">Liên hệ</a></li>
+                <li><a href="<?php echo route('get.about'); ?>">Giới thiệu</a></li>
+                <li><a href="<?php echo route('get.about'); ?>">Liên hệ</a></li>
               </ul>
             </div>
           </div>
@@ -52,7 +52,7 @@
                 <b>Email:</b> <?php echo $man[0]['email'] ?><br>
                 <b></b>  </div>
             </div>
-            <br>
+            <br> 
             <div class="">
                 <ul class="">
                   <li class="">
