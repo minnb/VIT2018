@@ -30,7 +30,7 @@
               <div class="icon-wrapper"><i class="fa fa-umbrella"></i></div>
               <div class="service-wrapper">
                 <h3>Liên hệ hotline</h3>
-                <p>Gọi ngay: <?php echo App\Models\Setting::getHotline(); ?></p>
+                <p><?php echo App\Models\Setting::getHotline(); ?></p>
               </div>
             </div>
           </div>
@@ -41,7 +41,7 @@
               <div class="icon-wrapper"><i class="fa fa-tags"></i></div>
               <div class="service-wrapper">
                 <h3>Email</h3>
-                <p>chienhn@vitduct.com.vn</p>
+                <p>contact@vitduct.com.vn</p>
               </div>
             </div>
           </div>
