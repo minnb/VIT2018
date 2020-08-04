@@ -26,10 +26,11 @@
             <div class="col-xs-12 col-sm-5 col-md-6 jtv-top-search"> 
               <div class="top-search">
                 <div id="search">
-                  <form>
+                  <form method="post" action="<?php echo route('post.search') ?>">
+                    <input type="hidden" name="_token" value="<?php echo csrf_token() ?>">
                     <div class="input-group">
-                      <input type="text" class="form-control" placeholder="Tìm kiếm..." name="search">
-                      <button class="btn-search" type="button"><i class="fa fa-search"></i></button>
+                      <input type="text" class="form-control" placeholder="Tìm kiếm..." name="search" value="<?php echo old('search'); ?>">
+                      <button class="btn-search" type="submit"><i class="fa fa-search"></i></button>
                     </div>
                   </form>
                 </div>

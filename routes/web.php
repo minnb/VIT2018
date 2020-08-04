@@ -23,4 +23,6 @@ Route::get('/san-pham/{id}/{title}',['as'=>'get.product.single','uses'=>'HomeCon
 
 Route::get('/chinh-sach-bao-hanh-doi-tra',array('as'=>'get.baohanh','uses'=>'HomeController@getWarranty'));
 Route::get('/chinh-sach-bao-mat',array('as'=>'get.baomat','uses'=>'HomeController@getSecurity'));
+Route::post('/result',array('as'=>'post.search','uses'=>'HomeController@postSearch'));
+
 

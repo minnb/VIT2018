@@ -108,4 +108,17 @@ class HomeController extends Controller
             return back();
         }
     }
+
+    public function postSearch(Request $request){
+        $keyword = trim($request->search);
+        $word = makeUnicode($keyword);
+        
+        $data = Post::where([
+            ['parent', 1],
+            ['sttesign', 1]
+        ])->get();
+
+
+        return view('home.pages.result', compact('keyword', 'data'));
+    }
 }
