@@ -7,9 +7,16 @@
             <!--<img src="" alt="vitduct.com.vn"></a>-->
             <b style="color:white"><?php echo $com[0]['name'] ?></b>
           </div>
+          <!--
           <div class="footer-description"><?php echo $com[0]['address'] ?></div>
           <div class="footer-description"><b>Điện thoại:</b> <?php echo $com[0]['phone'] ?> </div>
           <div class="footer-description"><b>Fax:</b> <?php echo $com[0]['fax'] ?> </div>
+          <div class="footer-description"><b>Email:</b> <?php echo $com[0]['email'] ?> </div>
+        -->
+          <div class="footer-description"><strong>Địa chỉ: </strong>Số 16 - Ngõ 85 - Đường Lĩnh Nam - P. Mai Động  - Q. Hoàng Mai - TP. Hà Nội</div>
+          <div class="footer-description"><strong>VPGD: </strong>NV43, KĐTM Trung Văn, Phường Trung Văn, Q. Nam Từ Liêm, TP. Hà Nội</div>
+          <div class="footer-description"><strong>Nhà máy SX: </strong>Cụm CN Yên Bình, Xã Yên Bình, H.Thạch Thất, TP. Hà Nội</div>
+          <div class="footer-description"><b>Điện thoại:</b> <?php echo $com[0]['phone'] ?> </div>
           <div class="footer-description"><b>Email:</b> <?php echo $com[0]['email'] ?> </div>
         </div>
         <div class="col-sm-6 col-md-4 col-xs-12 collapsed-block">
@@ -45,12 +52,10 @@
         </div>
         <div class="col-sm-6 col-md-3 col-xs-12 collapsed-block">
           <div class="footer-links">
-            <h3 class="links-title">NHÀ MÁY SẢN XUẤT<a class="expander visible-xs" href="#TabBlock-5">+</a></h3>
+            <h3 class="links-title">CÔNG TY CỔ PHẦN VITDUCT PHƯƠNG NAM<a class="expander visible-xs" href="#TabBlock-5">+</a></h3>
             <div class="tabBlock" id="TabBlock-5">
-              <div class="footer-description"><?php echo $man[0]['address'] ?></div>
-              <div class="footer-description"> <b>Điện thoại:</b>  <?php echo $man[0]['phone'] ?> <br>
-                <b>Email:</b> <?php echo $man[0]['email'] ?><br>
-                <b></b>  </div>
+              <div class="footer-description"><strong>Địa chỉ: </strong>Số 130/14, Trần Thái Tông, Phường 15, Q.Tân Bình, TP.Hồ Chí Minh</div>
+              <div class="footer-description"><strong>ĐNhà máy SX: </strong> Cụm công nghiệp Đức Hoà Đông, Xã Đức Hoà Đông, H.Đức Hoà, Tỉnh Long An</div>
             </div>
             <br> 
             <div class="">
