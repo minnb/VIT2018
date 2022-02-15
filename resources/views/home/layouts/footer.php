@@ -7,7 +7,6 @@
             <!--<img src="" alt="vitduct.com.vn"></a>-->
             <b style="color:white"><?php echo $com[0]['name'] ?></b>
           </div>
-          
           <!--
           <div class="footer-description"><?php echo $com[0]['address'] ?></div>
           <div class="footer-description"><b>Điện thoại:</b> <?php echo $com[0]['phone'] ?> </div>
@@ -75,7 +74,7 @@
     <div class="footer-coppyright">
       <div class="container">
         <div class="row">
-          <div class="col-sm-6 col-xs-12 coppyright"> Copyright © 2018 <a href="#"> VIT </a>. All Rights Reserved. </div>
+          <div class="col-sm-6 col-xs-12 coppyright"> Copyright © 2018 <a href="https://vitduct.com.vn/"> VITDUCT </a>. All Rights Reserved. </div>
           <div class="col-sm-6 col-xs-12">
             <ul class="footer-company-links">
               <li> <a href="<?php echo route('index'); ?>">Trang chủ</a> </li>
