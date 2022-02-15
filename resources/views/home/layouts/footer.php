@@ -7,6 +7,7 @@
             <!--<img src="" alt="vitduct.com.vn"></a>-->
             <b style="color:white"><?php echo $com[0]['name'] ?></b>
           </div>
+          
           <!--
           <div class="footer-description"><?php echo $com[0]['address'] ?></div>
           <div class="footer-description"><b>Điện thoại:</b> <?php echo $com[0]['phone'] ?> </div>
