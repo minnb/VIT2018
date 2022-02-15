@@ -5,9 +5,11 @@
 /public/uploads
 /project
 /vendor
+/storage
 .htaccess
 .env
 .phpunit.result.cache
+NUL
 Homestead.json
 Homestead.yaml
 npm-debug.log
