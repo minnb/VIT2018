@@ -14,7 +14,7 @@
           <div class="footer-description"><b>Email:</b> <?php echo $com[0]['email'] ?> </div>
         -->
           <div class="footer-description"><strong>Địa chỉ: </strong>Số 16 - Ngõ 85 - Đường Lĩnh Nam - P. Mai Động  - Q. Hoàng Mai - TP. Hà Nội</div>
-          <div class="footer-description"><strong>VPGD: </strong>NV43, KĐTM Trung Văn, Phường Trung Văn, Q. Nam Từ Liêm, TP. Hà Nội</div>
+          <div class="footer-description"><strong>VPGD: </strong>Tầng 11 - toà nhà ADI (Vietcombank) - Đường Tố Hữu - P.Vạn Phúc - Q.Hà Đông - TP.Hà Nội</div>
           <div class="footer-description"><strong>Nhà máy SX: </strong>Cụm CN Yên Bình, Xã Yên Bình, H.Thạch Thất, TP. Hà Nội</div>
           <div class="footer-description"><b>Điện thoại:</b> <?php echo $com[0]['phone'] ?> </div>
           <div class="footer-description"><b>Email:</b> <?php echo $com[0]['email'] ?> </div>
