@@ -28,7 +28,7 @@
                   $lstCateP = App\Models\Category::getListTop(1,9); 
                   foreach($lstCateP as $key=>$item) {
                 ?>
-                  <li><a href="<?php echo route('get.product.cate', ['id'=>fencrypt($item['id']),'name'=>makeUnicode($item['name'])] ) ?>"><?php echo $item['name']; ?></a></li>
+                  <li><a class="a-footer-product-list" href="<?php echo route('get.product.cate', ['id'=>fencrypt($item['id']),'name'=>makeUnicode($item['name'])] ) ?>"><?php echo $item['name']; ?></a></li>
                 <?php } ?>
               </ul>
             </div>

@@ -271,7 +271,7 @@ label {
 }
 .form-subscribe-header label {
 	color: #999;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: normal;
 	line-height: 20px;
 	margin: 0px 0px 10px;
@@ -324,7 +324,7 @@ label {
 }
 #newsletter-popup .subscribe-bottom label {
 	color: #333333;
-	font-size: 12px;
+	font-size: 14px;
 	margin-bottom: 0;
 }
 #newsletter-popup #dont_show {
@@ -347,7 +347,7 @@ label {
 	overflow: hidden
 }
 .col-main {
-	font-size: 13px;
+	font-size: 14px;
 }
 .col-left {
 	margin-bottom: 0px
@@ -419,7 +419,7 @@ label {
 .header-top {
 	background: #ececec;
 	color: #666;
-	font-size: 12px;
+	font-size: 14px;
 	width: 100%;
 	padding-top: 8px;
 	padding-bottom: 4px;
@@ -495,7 +495,7 @@ label {
 	white-space: nowrap;
 	line-height: 30px;
 	color: #666;
-	font-size: 12px;
+	font-size: 14px;
 	padding-left: 12px;
 	display: block
 }
@@ -633,7 +633,7 @@ label {
 	border: none;
 	background: #fff;
 	box-shadow: none;
-	font-size: 12px;
+	font-size: 14px;
 	padding-left: 12px;
 }
 .form-control::-moz-placeholder {
@@ -714,7 +714,7 @@ select.cate-dropdown {
 }
 .shipping-inner {
 	overflow: hidden;
-	font-size: 13px;
+	font-size: 14px;
 	text-align: left;
 	color: #333;
 	line-height: 1.4em;
@@ -726,7 +726,7 @@ select.cate-dropdown {
 	padding-left: 0px;
 }
 .shipping-inner h3 {
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 600;
 	letter-spacing: 1px;
 	margin-bottom: 1px;
@@ -740,7 +740,7 @@ select.cate-dropdown {
 	text-align: left;
 	text-transform: none;
 	color: #999;
-	font-size: 12px;
+	font-size: 14px;
 	letter-spacing: 0.5px;
 	margin-left: 10px;
 }
@@ -783,7 +783,7 @@ select.cate-dropdown {
 	color: #666;
 }
 .jtv-user-info .current-open i.fa-angle-down {
-	font-size: 13px;
+	font-size: 14px;
 	vertical-align: -1px;
 }
 .jtv-user-info .current-open i {
@@ -799,7 +799,7 @@ select.cate-dropdown {
 	text-transform: uppercase;
 }
 .dropdown-menu>li>a {
-	font-size: 12px;
+	font-size: 14px;
 	padding: 6px 15px;
 }
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
@@ -855,14 +855,14 @@ select.cate-dropdown {
 	padding: 0 0 3px
 }
 .top-cart-content .product-name a {
-	font-size: 12px;
+	font-size: 14px;
 	line-height: normal;
 	font-weight: 400;
 	padding-right: 5px;
 }
 .top-cart-title span {
 	font-weight: normal;
-	font-size: 12px;
+	font-size: 14px;
 	color: #fff;
 	text-transform: inherit
 }
@@ -889,7 +889,7 @@ select.cate-dropdown {
 .mini-cart .basket a {
 	color: #333;
 	margin: 0px;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 600;
 	padding: 0px;
 	display: inline-block;
@@ -935,7 +935,7 @@ select.cate-dropdown {
 	box-shadow: 0 3px 9px rgba(0,0,0,0.3)
 }
 .mini-cart .dropdown-toggle {
-	font-size: 12px;
+	font-size: 14px;
 	padding: 0;
 	text-transform: none
 }
@@ -973,7 +973,7 @@ select.cate-dropdown {
 }
 .top-subtotal {
 	color: #333333;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 700;
 	padding: 8px 15px;
 	text-align: left;
@@ -995,7 +995,7 @@ select.cate-dropdown {
 	color: #223D62;
 	line-height: 12px;
 	position: relative;
-	font-size: 12px;
+	font-size: 14px;
 	width: 20px;
 	margin-top: 2px;
 	margin-left: 29px
@@ -1006,7 +1006,7 @@ select.cate-dropdown {
 	overflow: hidden;
 	padding: 15px;
 	text-align: left;
-	font-size: 12px;
+	font-size: 14px;
 	background: #f5f5f5
 }
 ul#cart-sidebar {
@@ -1071,24 +1071,24 @@ ul#cart-sidebar {
 }
 .top-cart-title span {
 	font-weight: normal;
-	font-size: 12px;
+	font-size: 14px;
 	text-transform: uppercase
 }
 .top-cart-title p span {
 	text-transform: none
 }
 .mini-cart .actions .fa-shopping-cart:before {
-	font-size: 12px;
+	font-size: 14px;
 	padding-right: 8px
 }
 .mini-cart .actions .fa-check:before {
-	font-size: 12px;
+	font-size: 14px;
 	padding-right: 8px
 }
 .mini-cart .actions .btn-checkout {
 	background: #333;
 	color: #999;
-	font-size: 12px;
+	font-size: 14px;
 	padding: 8px 16px;
 	border: none;
 	cursor: pointer;
@@ -1105,7 +1105,7 @@ ul#cart-sidebar {
 .mini-cart .actions .view-cart {
 	background: #e83f33;
 	color: #fff;
-	font-size: 12px;
+	font-size: 14px;
 	padding: 8px 16px;
 	text-align: left;
 	cursor: pointer;
@@ -1132,13 +1132,13 @@ ul#cart-sidebar {
 	padding: 8px 10px 6px;
 	text-transform: none;
 	border: none;
-	font-size: 12px;
+	font-size: 14px;
 	text-transform: uppercase
 }
 .mini-cart .button.btn-checkout {
 	background-color: #970400;
 	color: #fff;
-	font-size: 12px;
+	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: 600;
 	padding: 0px 6px;
@@ -1150,7 +1150,7 @@ ul#cart-sidebar {
 }
 .mini-cart>.button {
 	color: #333333;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 300;
 	text-shadow: none;
 	border: none;
@@ -1219,7 +1219,7 @@ ul#cart-sidebar {
 }
 .our-features-box .feature-box {
 	overflow: hidden;
-	font-size: 13px;
+	font-size: 14px;
 	text-align: center;
 	color: #ccc;
 	line-height: 1.4em;
@@ -1228,7 +1228,7 @@ ul#cart-sidebar {
 	padding: 0px 0px;
 }
 .our-features-box .feature-box h3 {
-	font-size: 13px;
+	font-size: 14px;
 	letter-spacing: 0.5px;
 	margin-bottom: 3px;
 	margin-top: 5px;
@@ -1277,7 +1277,7 @@ ul#cart-sidebar {
 }
 .service-text p {
 	color: #333333;
-	font-size: 12px;
+	font-size: 14px;
 	padding-bottom: 0;
 	display: inline-block;
 	padding: 0 5px;
@@ -1333,7 +1333,7 @@ ul#cart-sidebar {
 }
 .jtv-service-area .block-wrapper .text-des {
 	text-align: center;
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 18px;
 	vertical-align: middle;
 	padding: 0px;
@@ -1348,7 +1348,7 @@ ul#cart-sidebar {
 }
 .jtv-service-area .block-wrapper .text-des p {
 	margin: 0;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 400;
 }
 .bottom-service {
@@ -1374,7 +1374,7 @@ ul#cart-sidebar {
 }
 .bottom-service-box .service-box-center .description {
 	color: #f8f8f8;
-	font-size: 12px;
+	font-size: 14px;
 }
 .bottom-service-box .box-outer > div {
 	border-left: 1px solid rgba(255, 255, 255, 0.2);
@@ -1401,7 +1401,7 @@ ul#cart-sidebar {
 }
 .service-text p {
 	color: #333333;
-	font-size: 12px;
+	font-size: 14px;
 	padding-bottom: 0;
 	display: inline-block;
 	padding: 0 5px;
@@ -1621,7 +1621,7 @@ ul#cart-sidebar {
     color: #fff; text-transform:uppercase;}
 .hover_data.bottom span {color: #fff;}	
 .hover_data span {
-	font-size: 13px;
+	font-size: 14px;
 	color: #333;
 }
 a.shop-now {
@@ -1760,7 +1760,7 @@ a.shop-now {
 .bottom-banner-img h6 {
 	display: table;
 	margin: auto;
-	font-size: 12px;
+	font-size: 14px;
 	color: #fff;
 	margin-bottom: 20px;
 	font-weight: normal;
@@ -1857,7 +1857,7 @@ a.shop-now {
 }
 .time .distance .text {
 	color: #666;
-	font-size: 12px;
+	font-size: 14px;
 	margin: 0 0 8px;
 	text-transform: capitalize;
 }
@@ -1906,7 +1906,7 @@ a.shop-now {
 	color: #333;
 }
 .daily-deal p {
-	font-size: 13px;
+	font-size: 14px;
 	line-height: 22px;
 	letter-spacing: 0.3px;
 	margin: 15px 0px 15px;
@@ -1967,7 +1967,7 @@ a.link:hover {
 	color: #343538;
 	margin-right: 0px;
 	text-decoration: none;
-	font-size: 13px;
+	font-size: 14px;
 	transition: color 300ms ease-in-out 0s, background-color 300ms ease-in-out 0s, background-position 300ms ease-in-out 0s;
 	padding: 0 20px;
 	text-transform: capitalize;
@@ -2251,7 +2251,7 @@ a.link:hover {
 	background: #e83f33;
 	border: 0 none;
 	bottom: 0;
-	font-size: 12px;
+	font-size: 14px;
 	left: -100%;
 	line-height: 10px;
 	position: absolute;
@@ -2399,7 +2399,7 @@ a.link:hover {
 }
 .product-item .item-inner .item-info .add-to-cart {
 	padding: 9px 12px;
-	font-size: 12px;
+	font-size: 14px;
 	width: 100%;
 }
 .product-item .item-inner .item-info .add-to-cart i {
@@ -2601,7 +2601,7 @@ a.link:hover {
 	padding: 10px 10px 15px 30px;
 	border-left: 0px solid #eaeaea;
 	background: inherit;
-	font-size: 13px;
+	font-size: 14px;
 	text-align: center;
 	line-height: 22px;
 	font-weight: 400;
@@ -2759,7 +2759,7 @@ a.link:hover {
 .blog-btm-desc p {
     margin-bottom: 10px;
     display: inline-block;
-    font-size: 13px;
+    font-size: 14px;
 }
 .blog-btm-desc .readmore{
   text-transform: uppercase;
@@ -2773,7 +2773,7 @@ a.link:hover {
   margin-bottom: 92px;
 }
 .blog-top-desc strong {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400;
     margin-right: 10px;
     text-transform: lowercase; color: #999;
@@ -2910,7 +2910,7 @@ a.link:hover {
 }
 .blog-content-jtv > h2 {
 	line-height: normal;
-	font-size: 13px;
+	font-size: 14px;
 	margin-bottom: 8px;
 }
 .blog-content-jtv > span {
@@ -2918,7 +2918,7 @@ a.link:hover {
 }
 .blog-content-jtv > p {
 	margin-top: 10px;
-	font-size: 13px;
+	font-size: 14px;
 	color: #666;
 }
 .blog-action {
@@ -2935,7 +2935,7 @@ a.link:hover {
 .blog-content-jtv .read-more {
 	font-weight: 400;
 	text-transform: uppercase;
-	font-size: 13px;
+	font-size: 14px;
 	color: #e83f33;
 }
 .blog-content-jtv .read-more:hover {
@@ -3010,14 +3010,14 @@ footer {
 	overflow: hidden;
 	color: #999;
 	background: #333;
-	font-size: 13px; padding-top:35px;
+	font-size: 14px; padding-top:35px;
 }
 footer p {
 	color: #999;
 	line-height: 20px;
 }
 footer h3 {
-	font-size: 13px;
+	font-size: 14px;
 	margin: 0px 0 2px;
 	padding: 0 0 10px;
 	letter-spacing: 0.5px;
@@ -3032,7 +3032,7 @@ footer .footer-links ul {
 footer .footer-links ul li {
 	list-style-type: none;
 	padding: 5px 0;
-	font-size: 12px;
+	font-size: 14px;
 }
 footer .footer-links ul li a {
 	transition: all .3s ease-in-out 0s;
@@ -3051,7 +3051,7 @@ footer .footer-links ul li a:hover {
 	display: block;
 }
 .email .fa-envelope:before {
-	font-size: 12px;
+	font-size: 14px;
 	color: #fff;
 	height: 35px;
 	width: 35px;
@@ -3137,7 +3137,7 @@ footer .footer-links ul li a:hover {
 }
 .footer-newsletter .newsletter-email {
 	float: left;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 300;
 	border: 0;
 	background: inherit;
@@ -3153,7 +3153,7 @@ footer .footer-links ul li a:hover {
 }
 .footer-newsletter .subscribe {
 	text-transform: uppercase;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 500;
 	float: left;
 	color: #fff;
@@ -3229,7 +3229,7 @@ footer .footer-links ul li a:hover {
 }
 .footer-description {
 	margin-bottom: 6px;
-	font-size: 13px;
+	font-size: 14px;
 	line-height: 22px;
 }
 footer .footer-contact {
@@ -3472,7 +3472,7 @@ nav a:hover {
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	font-size: 12px;
+	font-size: 14px;
 	color: #fff;
 }
 .mtmegamenu .mt-root-item a {
@@ -3524,7 +3524,7 @@ nav a:hover {
 	font-size: 0
 }
 .mtmegamenu .menu-items li {
-	font-size: 12px;
+	font-size: 14px;
 	list-style: none
 }
 .mtmegamenu .menu-items>li {
@@ -3536,7 +3536,7 @@ nav a:hover {
 	margin: 5px 0 10px 0;
 	padding: 0 0 8px 0;
 	border-bottom: 1px solid #ddd;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 600;
 	letter-spacing: 0.5px;
 }
@@ -3616,7 +3616,7 @@ nav a:hover {
 }
 .mtmegamenu .depth-1.product .title {
 	font-weight: normal;
-	font-size: 12px;
+	font-size: 14px;
 	border: none;
 	margin: 10px 0;
 	padding: 0
@@ -3632,7 +3632,7 @@ nav a:hover {
 }
 .mtmegamenu .depth-1.manufacturer .title {
 	font-weight: normal;
-	font-size: 12px;
+	font-size: 14px;
 	border: none;
 	margin: 10px 0;
 	padding: 0
@@ -3648,7 +3648,7 @@ nav a:hover {
 }
 .mtmegamenu .depth-1.supplier .title {
 	font-weight: normal;
-	font-size: 12px;
+	font-size: 14px;
 	border: none;
 	margin: 10px 0;
 	padding: 0
@@ -3699,7 +3699,7 @@ float:left
 	padding: 0 10px;
 	width: 20%;
 	vertical-align: top;
-	font-size: 12px;
+	font-size: 14px;
 	list-style: none
 }
 .mtmegamenu .text-center ul, .mtmegamenu .text-center li {
@@ -3762,7 +3762,7 @@ float:left
 	padding: 0 5px 0px
 }
 .mtmegamenu .demo_custom_link_cms .menu-item.depth-1>.title a {
-	font-size: 12px;
+	font-size: 14px;
 	text-transform: capitalize;
 	font-weight: normal;
 	border: 0;
@@ -3873,7 +3873,7 @@ html {
 	background: #e83f33;
 	z-index: 99999;
 	display: none;
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 1.42857;
 	text-transform: uppercase;
 	letter-spacing: 0.5px; border-right:2px solid #cb2d22;
@@ -3939,7 +3939,7 @@ html {
 	padding: 10px;
 	padding-left: 15px;
 	font-weight: 600;
-	font-size: 13px;
+	font-size: 14px;
 	letter-spacing: 0.5px;
 }
 .mobile-menu li a:hover {
@@ -4009,7 +4009,7 @@ html {
 .menu > li > a {
 	display: block;
 	line-height: 20px;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 700;
 	color: #222;
 	text-transform: uppercase;
@@ -4052,7 +4052,7 @@ html {
 	width: 88%;
 }
 .mega-menu-title h3 {
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 500;
 	margin: 0;
 	padding: 18px 15px 8px;
@@ -4099,13 +4099,13 @@ html {
 }
 .mega-menu-category > .nav > li > a {
 	border-bottom: 1px solid #e5e5e5;
-	padding: 14px 15px;
+	padding: 10px 10px;
 	color: #333;
 	background-color: #fff;
-	font-size: 12px;
+	font-size: 13px;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
-	font-weight: 400;
+	font-weight: 350;
 }
 .mega-menu-category > .nav > li:last-child > a {
 	border-bottom: 0px solid #e5e5e5;
@@ -4162,7 +4162,7 @@ html {
 	text-align: left;
 	z-index: 3000;
 	padding: 10px 20px;
-	font-size: 13px;
+	font-size: 14px;
 }
 .popup .col-md-4 {
 	padding: 0px 12px;
@@ -4306,7 +4306,7 @@ a.ads1 img {
 }
 .navbar-nav > li > a {
 	color: #fff;
-	font-size: 12px;
+	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: 700;
 }
@@ -4425,7 +4425,7 @@ a.ads1 img {
 	background: #f5f5f5;
 	color: #393939;
 	display: inline-block;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 700;
 	height: 30px;
 	line-height: 30px;
@@ -4436,7 +4436,7 @@ a.ads1 img {
 	border: 1px solid #e5e5e5;
 	color: #363636;
 	display: block;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 700;
 	height: 30px;
 	width: 30px;
@@ -4521,7 +4521,7 @@ button.button {
 	border: 0;
 	background: #444;
 	padding: 6px 16px;
-	font-size: 12px;
+	font-size: 14px;
 	border: 1px solid #444;
 	font-weight: 500;
 	text-align: center;
@@ -4553,7 +4553,7 @@ button span {
 .breadcrumbs {
 	padding: 8px 0px;
 	margin: auto;
-	font-size: 12px; border-bottom:1px #e5e5e5 solid;
+	font-size: 14px; border-bottom:1px #e5e5e5 solid;
 }
 .breadcrumbs a {
 	color: #999;
@@ -4624,7 +4624,7 @@ button span {
 }
 .category-sidebar .product-categories li a {
 	font-weight: normal;
-	font-size: 12px;
+	font-size: 14px;
 	color: #222;
 	font-family: 'Raleway', sans-serif
 }
@@ -4633,13 +4633,13 @@ button span {
 }
 .category-sidebar .product-categories li.current-cat a {
 	font-weight: 700;
-	font-size: 12px;
+	font-size: 14px;
 	color: #333333
 }
 .category-sidebar .product-categories li.current-cat ul li a {
 	border-bottom: 0 solid #e8e6e2;
 	color: #666;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 400;
 	padding: 2px
 }
@@ -4660,7 +4660,7 @@ button span {
 .category-sidebar .product-categories li ul li a {
 	border-bottom: 0 solid #e8e6e2;
 	font-weight: 400;
-	font-size: 12px;
+	font-size: 14px;
 	margin: 0;
 	padding: 6px 3px;
 	text-decoration: none;
@@ -4681,7 +4681,7 @@ button span {
 .category-sidebar .cat-item.cat-parent:after {
 	content: "";
 	color: #555;
-	font-size: 12px;
+	font-size: 14px;
 	position: absolute;
 	right: 5px;
 	top: 8px;
@@ -4713,7 +4713,7 @@ button span {
 .category-sidebar .cat-item.cat-parent.current-cat-parent.close-cat:after {
 	content: "";
 	color: #555;
-	font-size: 12px;
+	font-size: 14px;
 	position: absolute;
 	right: 5px;
 	top: 8px;
@@ -4760,7 +4760,7 @@ button span {
 .category-sidebar .cat-item.cat-parent.current-cat.open-cat:after {
 	content: "";
 	color: #555;
-	font-size: 12px;
+	font-size: 14px;
 	position: absolute;
 	right: 5px;
 	top: 8px;
@@ -4814,7 +4814,7 @@ button span {
 .sidebar-cart .block-content .summary .subtotal .label {
 	padding: 2px 0;
 	color: #333333;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 600
 }
 .sidebar-cart .subtotal .price {
@@ -4877,7 +4877,7 @@ button span {
 }
 .sidebar-cart .block-content ul li .product-name {
 	margin: 0 0 2px;
-	font-size: 12px;
+	font-size: 14px;
 	padding-right: 15px;
 }
 .sidebar ul, .sidebar ol {
@@ -4901,14 +4901,14 @@ button span {
 
 }
 .block .block-content {
-	font-size: 12px;
+	font-size: 14px;
 	overflow: hidden;
 	padding: 15px 0px;
 }
 .block-poll .block-subtitle {
 	color: #222;
 	font-weight: 600;
-	font-size: 13px;
+	font-size: 14px;
 }
 .block-poll li {
 	padding: 3px 0px !important;
@@ -4929,7 +4929,7 @@ button span {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	font-size: 12px;
+	font-size: 14px;
 	color: #333;
 	font-weight: normal;
 }
@@ -5041,7 +5041,7 @@ button span {
 h2.saider-bar-title {
 	color: #333333;
 	display: block;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 600;
 	border-bottom: 1px #e8e8e8 solid;
 	margin-bottom: 14px;
@@ -5119,7 +5119,7 @@ h2.saider-bar-title {
 	padding: 14px 0px;
 }
 ol#compare-items li a.product-name {
-	font-size: 12px;
+	font-size: 14px;
 	padding: 0 3px;
 	margin: 0;
 	font-weight: normal;
@@ -5266,7 +5266,7 @@ button.button.button-clear:hover {
 .special-product a.link-all {
 	background: #e83f33;
 	color: #fff;
-	font-size: 12px;
+	font-size: 14px;
 	padding: 6px 16px;
 	border: none;
 	cursor: pointer;
@@ -5306,7 +5306,7 @@ button.button.button-clear:hover {
 }
 .cat-img-title p {
 	clear: left;
-	font-size: 13px;
+	font-size: 14px;
 	line-height: 1.4em;
 	color: #fff;
 	font-weight: 400;
@@ -5333,7 +5333,7 @@ button.button.button-clear:hover {
 	background: #e83f33;
 	color: #fff;
 	border: 1px solid #e83f33;
-	font-size: 12px;
+	font-size: 14px;
 	padding: 8px 18px;
 	cursor: pointer;
 	transition: color 300ms ease-in-out 0s, background-color 300ms ease-in-out 0s, background-position 300ms ease-in-out 0s;
@@ -5493,13 +5493,13 @@ ul.products-list .cart-button i {
 	padding-top: 12px;
 }
 .products-list .desc a.link-learn {
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 600;
 	margin-top: 5px;
 	color: #e83f33
 }
 .products-list .product-shop button.button span {
-	font-size: 12px;
+	font-size: 14px;
 	padding: 1px 0 0 10px;
 }
 .products-list .product-shop .actions ul {
@@ -5578,7 +5578,7 @@ ul.products-list .cart-button i {
 }
 .old-price .price {
 	color: #ccc !important;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: normal;
 	text-decoration: line-through;
 	margin-left: 6px
@@ -5591,7 +5591,7 @@ ul.products-list .cart-button i {
 .special-price .price-label {
 	color: #666;
 	display: none;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 400;
 	white-space: nowrap
 }
@@ -5601,7 +5601,7 @@ ul.products-list .cart-button i {
 	font-weight: 600
 }
 .special-price .price-label {
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 600;
 	white-space: nowrap;
 	color: #666;
@@ -5784,7 +5784,7 @@ ul.products-list .cart-button i {
 	text-transform: uppercase;
 }
 .product-view-area .short-description {
-	font-size: 12px;
+	font-size: 14px;
 	padding-top: 12px;
 	border-top: 1px solid #e5e5e5;
 	margin-bottom: 15px
@@ -5796,7 +5796,7 @@ ul.products-list .cart-button i {
 	font-weight: 600
 }
 .product-view-area .short-description p {
-	font-size: 13px;
+	font-size: 14px;
 	color: #666;
 }
 .product-view-area .product-details-area .ratings {
@@ -5822,7 +5822,7 @@ ul.products-list .cart-button i {
 	color: #fff;
 	background-color: #5cb85c;
 	padding: 5px 12px;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 600;
 	border-radius: 3px;
 }
@@ -5830,7 +5830,7 @@ ul.products-list .cart-button i {
 	color: #fff;
 	background-color: #d9534f;
 	padding: 5px 12px;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 600
 }
 .product-view-area .product-details-area .price-box {
@@ -5914,7 +5914,7 @@ ul.products-list .cart-button i {
 	float: left;
 	margin-top: 10px;
 	text-align: left;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 600;
 	margin-right: 10px
 }
@@ -5972,7 +5972,7 @@ button.button.pro-add-to-cart span i {
 .product-cart-option ul li a {
 	color: #333;
 	display: block;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 500;
 	line-height: 22px;
 	margin: 0;
@@ -6002,7 +6002,7 @@ button.button.pro-add-to-cart span i {
 	padding: 0px;
 }
 .pro-tags {
-	font-size: 13px;
+	font-size: 14px;
 	line-height: 18px;
 	color: #333;
 	font-weight: 300;
@@ -6132,7 +6132,7 @@ button.button.pro-add-to-cart span i {
 .tab-content {
 	padding: 5px 0px 0px 0px;
 	overflow: hidden;
-	font-size: 13px;
+	font-size: 14px;
 	line-height: 20px;
 	margin-top: 10px;
 	margin-bottom: 0px;
@@ -6200,7 +6200,7 @@ p.note {
 	color: #333333
 }
 .review-ratting table tr th, .review-ratting table tr td {
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 1em;
 	padding: 5px 0
 }
@@ -6212,7 +6212,7 @@ p.note {
 	font-style: italic
 }
 .reviews-content-right h3 {
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: normal;
 	color: #222;
 	line-height: 1.35;
@@ -6223,7 +6223,7 @@ p.note {
 }
 .reviews-content-right h4 {
 	color: #222;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 600;
 	margin: 0 0 12px;
 }
@@ -6285,7 +6285,7 @@ p.note {
 .form-element label, .ck-box label {
 	color: #333333;
 	display: block;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 600;
 	text-transform: capitalize;
 	margin: 10px auto 2px
@@ -6432,7 +6432,7 @@ p.note {
 	text-align: center
 }
 .page-order .product-name {
-	font-size: 13px;
+	font-size: 14px;
 	margin-bottom: 0px;
 	font-weight: 600;
 }
@@ -6511,7 +6511,7 @@ p.note {
 	text-align: center
 }
 .cart_summary .action a {
-	font-size: 12px;
+	font-size: 14px;
 	display: inline-block;
 	line-height: 24px
 }
@@ -6549,7 +6549,7 @@ p.note {
 	border: 1px #eeeeee solid;
 	border-radius: 3px;
 	text-transform: uppercase;
-	font-size: 12px;
+	font-size: 14px;
 }
 .form-control {
 	box-shadow: none;
@@ -6614,7 +6614,7 @@ p.note {
 .wishlist-item table th {
 	border-bottom: 1px solid #e5e5e5;
 	border-top: 1px solid #e5e5e5;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 600;
 	padding: 10px;
 	text-align: center;
@@ -6718,7 +6718,7 @@ p.note {
 }
 .dashboard .welcome-msg strong {
 	font-weight: bold;
-	font-size: 13px;
+	font-size: 14px;
 }
 .box-account {
 	margin-top: 0px;
@@ -6757,7 +6757,7 @@ p.note {
 .recent-orders .title-buttons strong {
 	color: #333;
 	float: left;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 600;
 }
 .my-account {
@@ -6858,7 +6858,7 @@ p.note {
 }
 .checkout-page .box-border label {
 	margin-top: 5px;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 600;
 }
 .checkout-page .box-border p, .checkout-page .box-border h4 {
@@ -6977,7 +6977,7 @@ p.note {
 }
 .register-benefits h5 {
 	font-weight: 600;
-	font-size: 13px;
+	font-size: 14px;
 }
 .box-authentication {
 	display: inline-block;
@@ -7083,7 +7083,7 @@ a.button-back:hover {
 	display: inline-block;
 	margin-bottom: 0px;
 	overflow: hidden;
-	font-size: 13px;
+	font-size: 14px;
 }
 .about-slid {
 	background-size: cover;
@@ -7123,7 +7123,7 @@ a.button-back:hover {
 	padding-left: 10px;
 }
 .about-page .fa-arrow-right {
-	font-size: 12px;
+	font-size: 14px;
 	color: #999;
 }
 .about-page .text_color {
@@ -7623,7 +7623,7 @@ label[for="rememberme"] {
 	background-color: #fff;
 	border: 0px #e8e8e8 solid;
 	padding: 8px 12px;
-	font-size: 12px;
+	font-size: 14px;
 	border-radius: 2px;
 }
 .jtv-best-sale .add-to-cart i {
@@ -7706,7 +7706,7 @@ label[for="rememberme"] {
 	width: auto;
 	color: #FFF;
 	padding: 2px 6px;
-	font-size: 12px;
+	font-size: 14px;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	border-radius: 30px;
@@ -7949,7 +7949,7 @@ label[for="rememberme"] {
 	width: auto;
 	color: #FFF;
 	padding: 2px 10px;
-	font-size: 12px;
+	font-size: 14px;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	border-radius: 30px;
@@ -7985,7 +7985,7 @@ label[for="rememberme"] {
 	background-color: #fff;
 	border: 1px #e8e8e8 solid;
 	padding: 8px 12px;
-	font-size: 12px;
+	font-size: 14px;
 	border-radius: 3px;
 }
 .on-sale-product .add-to-cart i {
@@ -8033,7 +8033,7 @@ label[for="rememberme"] {
 .item-inner .item-info .add-to-cart {
 	background-color: #444;
 	padding: 8px 12px;
-	font-size: 12px;
+	font-size: 14px;
 	border-radius: 2px;
 	color: #fff;
 }
