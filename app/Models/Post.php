@@ -45,6 +45,21 @@ class Post extends Model
     	return $data;
     }
 
+    public static function getProductLink($parent, $limit = ''){
+        if($limit == ''){
+            $data = Post::where([
+                ['parent', $parent],
+                ['sttesign', 999]
+            ])->inRandomOrder()->first();
+        }else{
+            $data = Post::where([
+                ['parent', $parent],
+                ['sttesign', 1]
+            ])->inRandomOrder()->limit($limit)->get()->toArray();
+        }
+        return $data;
+    }
+
     public static function getRandomPostByCate($cate, $limit = ''){
     	if($limit == ''){
     		$data = Post::where([

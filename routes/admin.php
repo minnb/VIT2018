@@ -18,6 +18,7 @@ Route::group(['prefix'=> 'dashboard'], function(){
 Route::group(['prefix'=> 'dashboard'], function(){
 		Route::group(['prefix'=> 'lists'], function(){
 			Route::get('products', ['as'=>'get.admin.list.product','uses'=>'Admin\ProductController@getList']);
+			Route::get('products/link', ['as'=>'get.admin.list.product.link','uses'=>'Admin\ProductController@getListLink']);
 			Route::get('projects', ['as'=>'get.admin.list.project','uses'=>'Admin\ProjectController@getList']);
 			Route::get('documents', ['as'=>'get.admin.list.document','uses'=>'Admin\DocumentController@getList']);
 			Route::get('news', ['as'=>'get.admin.list.news','uses'=>'Admin\NewController@getList']);
@@ -36,7 +37,11 @@ Route::group(['prefix'=> 'dashboard'], function(){
 Route::group(['prefix'=> 'dashboard'], function(){
 		Route::group(['prefix'=> 'add'], function(){
 			Route::get('product', ['as'=>'get.admin.add.product','uses'=>'Admin\ProductController@getAdd']);
+			Route::get('product/link', ['as'=>'get.admin.add.product.link','uses'=>'Admin\ProductController@getAddLink']);
+
 			Route::post('product', ['as'=>'post.admin.add.product','uses'=>'Admin\ProductController@postAdd']);
+			Route::post('product/link', ['as'=>'post.admin.add.product.link','uses'=>'Admin\ProductController@postAddLink']);
+
 			Route::get('document', ['as'=>'get.admin.add.document','uses'=>'Admin\DocumentController@getAdd']);
 			Route::post('document', ['as'=>'post.admin.add.document','uses'=>'Admin\DocumentController@postAdd']);
 			Route::get('project', ['as'=>'get.admin.add.project','uses'=>'Admin\ProjectController@getAdd']);
@@ -50,7 +55,11 @@ Route::group(['prefix'=> 'dashboard'], function(){
 Route::group(['prefix'=> 'dashboard'], function(){
 		Route::group(['prefix'=> 'edit'], function(){
 			Route::get('product/{id}', ['as'=>'get.admin.edit.product','uses'=>'Admin\ProductController@getEdit']);
+			Route::get('product/link/{id}', ['as'=>'get.admin.edit.product.link','uses'=>'Admin\ProductController@getEditLink']);
+			
 			Route::post('product/{id}', ['as'=>'post.admin.edit.product','uses'=>'Admin\ProductController@postEdit']);
+			Route::post('product/link/{id}', ['as'=>'post.admin.edit.product.link','uses'=>'Admin\ProductController@postEditLink']);
+
 			Route::get('product/img/{id}', ['as'=>'get.admin.del.product','uses'=>'Admin\ProductController@getDelImage']);
 			Route::get('document/{id}', ['as'=>'get.admin.edit.document','uses'=>'Admin\DocumentController@getEdit']);
 			Route::post('document/{id}', ['as'=>'post.admin.edit.document','uses'=>'Admin\DocumentController@postEdit']);
@@ -64,6 +73,7 @@ Route::group(['prefix'=> 'dashboard'], function(){
 Route::group(['prefix'=> 'dashboard'], function(){
 		Route::group(['prefix'=> 'delete'], function(){
 			Route::get('product/{id}', ['as'=>'get.admin.delete.product','uses'=>'Admin\ProductController@getDelete']);
+			Route::get('product/link/{id}', ['as'=>'get.admin.delete.product.link','uses'=>'Admin\ProductController@getDeleteLink']);
 			Route::get('document/{id}', ['as'=>'get.admin.delete.document','uses'=>'Admin\DocumentController@getDelete']);
 			Route::get('project/{id}', ['as'=>'get.admin.delete.project','uses'=>'Admin\ProjectController@getDelete']);
 			Route::get('news/{id}', ['as'=>'get.admin.delete.news','uses'=>'Admin\NewController@getDelete']);

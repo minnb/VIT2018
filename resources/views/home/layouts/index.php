@@ -49,7 +49,7 @@
                         <div class="info-inner">
                           <div class="item-title"> <a title="<?php echo $item['title'] ;?>" href="<?php echo route('get.product.single',['id'=>fencrypt($item['id']),'name'=>makeUnicode($item['title'])]) ?>"><?php echo $item['title']; ?> </a> </div>
                           <div class="item-content">
-                            <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> </div>
+                            <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
                             <div class="item-price">
                               <div class="price-box"> <span class="regular-price"> <span class="price"></span> </span> </div>
                             </div>
@@ -70,6 +70,11 @@
     </div>
   </div>
   <div class="container">
+  
+    <?php
+     require __DIR__.'/../layouts/product_link.php';
+    ?>
+
     <?php 
       $lstCatePro= App\Models\Category::getList(1); 
       foreach($lstCatePro as $key=>$item) {
@@ -113,49 +118,49 @@
     <?php } ?>
   </div>
 
-  <div class="container">
-    <?php 
-      $lstCateProject= App\Models\Category::getList(2); 
-      foreach($lstCateProject as $key=>$item) {
-    ?>
-    <div class="home-tab">
-      <div class="tab-title text-left">
-        <h2><?php echo $item['name']; ?></h2>
-      </div>
-      <div id="productTabContent" class="tab-content">
-        <div class="tab-pane active in" id="#">
-          <div class="featured-pro">
-            <div class="slider-items-products">
-              <div id="computer-slider" class="product-flexslider hidden-buttons">
-                <div class="slider-items slider-width-col4">
-                  <?php
-                    $lstProByCate = App\Models\Post::getPostByCateId($item['id'],4) ; 
-                    foreach($lstProByCate as $value) {
-                  ?>
-                  <div class="product-item">
-                    <div class="item-inner">
-                      <div class="product-thumbnail">
-                        <div class="pr-img-area product-imgage-lager"> <a title="<?php echo $value['title']; ?>" href="<?php echo route('get.product.single',['id'=>fencrypt($value['id']),'name'=>makeUnicode($value['title'])]) ?>">
-                          <figure> <img class="first-img" src="<?php echo getImageInContent($value['content']) ?>" alt="HTML template"></figure>
-                          </a> </div>
+      <div class="container">
+        <?php 
+          $lstCateProject= App\Models\Category::getList(2); 
+          foreach($lstCateProject as $key=>$item) {
+        ?>
+          <div class="home-tab">
+            <div class="tab-title text-left">
+              <h2><?php echo $item['name']; ?></h2>
+            </div>
+            <div id="productTabContent" class="tab-content">
+              <div class="tab-pane active in" id="#">
+                <div class="featured-pro">
+                  <div class="slider-items-products">
+                    <div id="computer-slider" class="product-flexslider hidden-buttons">
+                      <div class="slider-items slider-width-col4">
+                        <?php
+                          $lstProByCate = App\Models\Post::getPostByCateId($item['id'],4) ; 
+                          foreach($lstProByCate as $value) {
+                        ?>
+                        <div class="product-item">
+                          <div class="item-inner">
+                            <div class="product-thumbnail">
+                              <div class="pr-img-area product-imgage-lager"> <a title="<?php echo $value['title']; ?>" href="<?php echo route('get.product.single',['id'=>fencrypt($value['id']),'name'=>makeUnicode($value['title'])]) ?>">
+                                <figure> <img class="first-img" src="<?php echo getImageInContent($value['content']) ?>" alt="HTML template"></figure>
+                                </a> </div>
+                              </div>
+                            <div class="item-info">
+                              <div class="info-inner">
+                                <div class="item-title"> <a title="<?php echo $value['title']; ?>" href="<?php echo route('get.product.single',['id'=>fencrypt($value['id']),'name'=>makeUnicode($value['title'])]) ?>"><?php echo $value['title']; ?> </a> </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                      <div class="item-info">
-                        <div class="info-inner">
-                          <div class="item-title"> <a title="<?php echo $value['title']; ?>" href="<?php echo route('get.product.single',['id'=>fencrypt($value['id']),'name'=>makeUnicode($value['title'])]) ?>"><?php echo $value['title']; ?> </a> </div>
-                        </div>
-                      </div>
+                        <?php } ?>
+                     </div>
                     </div>
                   </div>
-                  <?php } ?>
-               </div>
-              </div>
+                </div>
+              </div>    
             </div>
           </div>
-        </div>    
+        <?php } ?>
       </div>
-    </div>
-    <?php } ?>
-  </div>
 <?php
  require __DIR__.'/../layouts/footer.php';
 ?>

@@ -11,6 +11,9 @@
                 <a href="<?php echo route('get.admin.list.product') ; ?>"><i class="fa fa-fw fa-star"></i><span> Sản phẩm </span> </a>
             </li>
             <li class="submenu">
+                <a href="<?php echo route('get.admin.list.product.link') ; ?>"><i class="fa fa-fw fa-star"></i><span> Sản phẩm liên kết </span> </a>
+            </li>
+            <li class="submenu">
                 <a href="<?php echo route('get.admin.list.document') ; ?>"><i class="fa fa-fw fa-book"></i><span> Tài liệu </span> </a>
             </li>
             <li class="submenu">
