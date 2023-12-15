@@ -2,6 +2,9 @@
   <footer>
     <div class="container">
       <div class="row">
+        <div class="zalo-chat-widget" data-oaid="886745792358844995" data-welcome-message="Rất vui khi được hỗ trợ bạn!" data-autopopup="0" data-width="" data-height=""></div>
+        <script src="https://sp.zalo.me/plugins/sdk.js"></script>
+
         <div class="col-sm-6 col-md-3 col-xs-12">
           <div class="footer-logo" style="text-align: left;">
             <!--<img src="" alt="vitduct.com.vn"></a>-->
